@@ -10,9 +10,9 @@
 
 ### 1. Electric dipole 的定义
 
-$$
+\`\`\`math
 \mathbf p=q\mathbf d
-$$
+\`\`\`
 
 其中 $\mathbf d$ 是从负电荷 $-q$ 指向正电荷 $+q$ 的位移矢量。
 
@@ -26,7 +26,7 @@ $$
 
 ### 3. dipole 1 的远场
 
-$$
+\`\`\`math
 \mathbf E_1(\mathbf r)
 =
 \frac{1}{4\pi\varepsilon_0 r^3}
@@ -34,7 +34,7 @@ $$
 3(\mathbf p_1\cdot\hat{\mathbf r})\hat{\mathbf r}
 -\mathbf p_1
 \right].
-$$
+\`\`\`
 
 ### 4. 为什么只拆 $\mathbf p_2$
 
@@ -47,13 +47,13 @@ $\mathbf p_1$ 作为场源，已有远场公式，可以直接使用。
 
 点电荷在电场中的受力仍然只是
 
-$$
+\`\`\`math
 \mathbf F=q\mathbf E.
-$$
+\`\`\`
 
 因此：
 
-$$
+\`\`\`math
 \mathbf F
 =
 q_2\left[
@@ -61,29 +61,29 @@ q_2\left[
 -
 \mathbf E_1\left(\mathbf r-\frac{\mathbf d_2}{2}\right)
 \right].
-$$
+\`\`\`
 
 ### 5. 当前推到的关键中间式
 
 由于 $d_2\ll r$，对整个电场做一阶 Taylor 展开：
 
-$$
+\`\`\`math
 \mathbf E_1\left(\mathbf r\pm\frac{\mathbf d_2}{2}\right)
 \approx
 \mathbf E_1(\mathbf r)
 \pm
 \frac12(\mathbf d_2\cdot\nabla)\mathbf E_1(\mathbf r).
-$$
+\`\`\`
 
 相减后：
 
-$$
+\`\`\`math
 \mathbf F
 \approx
 q_2(\mathbf d_2\cdot\nabla)\mathbf E_1
 =
 (\mathbf p_2\cdot\nabla)\mathbf E_1.
-$$
+\`\`\`
 
 ---
 
@@ -91,20 +91,24 @@ $$
 
 1. **Taylor 一阶近似**
    - 还不熟悉为什么
-     $$
+
+     \`\`\`math
      f(x+h)\approx f(x)+hf'(x)
-     $$
+     \`\`\`
+
      以及它在三维矢量场中为什么变成
-     $$
+
+     \`\`\`math
      \mathbf E(\mathbf r+\delta\mathbf r)
      \approx
      \mathbf E(\mathbf r)
      +(\delta\mathbf r\cdot\nabla)\mathbf E.
-     $$
+     \`\`\`
 
 2. **$\nabla$ 与方向导数**
    - 不熟悉
-     $$
+
+     \`\`\`math
      \nabla
      =
      \hat{\mathbf x}\frac{\partial}{\partial x}
@@ -112,26 +116,32 @@ $$
      \hat{\mathbf y}\frac{\partial}{\partial y}
      +
      \hat{\mathbf z}\frac{\partial}{\partial z}.
-     $$
+     \`\`\`
+
    - 目前只能暂时理解 $(\mathbf d\cdot\nabla)\mathbf E$ 为“沿 $\mathbf d$ 方向看电场变化多快”。
 
 3. **完整展开**
    - 已知道只展开
-     $$
+
+     \`\`\`math
      \left|\mathbf r\pm\frac{\mathbf d_2}{2}\right|^{-3}
-     $$
+     \`\`\`
+
      还不够，因为 dipole 电场里的 $\hat{\mathbf r}$、$\mathbf p_1\cdot\hat{\mathbf r}$ 也会随位置变化。
+
    - 还没有熟练掌握如何从
-     $$
+
+     \`\`\`math
      \mathbf F=(\mathbf p_2\cdot\nabla)\mathbf E_1
-     $$
+     \`\`\`
+
      展开到最终四项矢量表达式。
 
 ---
 
 ## 最终答案（暂存，待之后真正推懂）
 
-$$
+\`\`\`math
 \boxed{
 \mathbf F
 =
@@ -148,20 +158,20 @@ $$
 \hat{\mathbf r}
 \right]
 }
-$$
+\`\`\`
 
 ### 考试检查
 
 dipole 远场满足
 
-$$
+\`\`\`math
 E\sim r^{-3},
-$$
+\`\`\`
 
 再对空间变化一次，因此 dipole–dipole force 应满足
 
-$$
+\`\`\`math
 F\sim r^{-4}.
-$$
+\`\`\`
 
 若最终答案不是 $1/r^4$ 量级，需要检查。
