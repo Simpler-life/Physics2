@@ -3,16 +3,6 @@
 ## 原题
 <img width="1152" height="162" alt="image" src="https://github.com/user-attachments/assets/72303894-653a-421e-a2f7-cc76575dfdb0" />
 
-An electric dipole (mathbf p_2) is located at position (mathbf r) relative to a second dipole (mathbf p_1), with (r) much larger than the size of either dipole. Find the force exerted on (mathbf p_2) by (mathbf p_1), expressed in terms of (mathbf p_1), (mathbf p_2) and (mathbf r).
-
-**Hint:** write (mathbf p_2) as a pair of charges (pm q_2) at
-[
-mathbf r pm rac{mathbf d_2}{2},
-]
-and expand the field of (mathbf p_1) to first order in (mathbf d_2), as was done for the dipole field itself in Section 1.4.
-
-> 来源：chap01.pdf, Section 1.6, Exercise 3。PDF 的自动文本抽取有部分符号乱码，因此这里按上下文恢复为标准记号 (r,q_2)。
-
 ---
 
 ## 已经理解的内容
