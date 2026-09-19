@@ -1,6 +1,7 @@
 # Chap01 Exercise 3 — Dipole–Dipole Force（未解决）
 
 ## 原题
+<img width="1152" height="162" alt="image" src="https://github.com/user-attachments/assets/72303894-653a-421e-a2f7-cc76575dfdb0" />
 
 An electric dipole (mathbf p_2) is located at position (mathbf r) relative to a second dipole (mathbf p_1), with (r) much larger than the size of either dipole. Find the force exerted on (mathbf p_2) by (mathbf p_1), expressed in terms of (mathbf p_1), (mathbf p_2) and (mathbf r).
 
@@ -41,7 +42,8 @@ mathbf E_1(mathbf r)
 left[
 3(mathbf p_1cdothat{mathbf r})hat{mathbf r}
 -mathbf p_1
-ight].
+
+ight].
 ]
 
 ### 4. 为什么只拆 (mathbf p_2)
@@ -65,10 +67,13 @@ mathbf F=qmathbf E.
 mathbf F
 =
 q_2left[
-mathbf E_1left(mathbf r+rac{mathbf d_2}{2}ight)
+mathbf E_1left(mathbf r+rac{mathbf d_2}{2}
+ight)
 -
-mathbf E_1left(mathbf r-rac{mathbf d_2}{2}ight)
-ight].
+mathbf E_1left(mathbf r-rac{mathbf d_2}{2}
+ight)
+
+ight].
 ]
 
 ### 5. 当前推到的关键中间式
@@ -76,7 +81,8 @@ mathbf E_1left(mathbf r-rac{mathbf d_2}{2}ight)
 由于 (d_2ll r)，对整个电场做一阶 Taylor 展开：
 
 [
-mathbf E_1left(mathbf rpmrac{mathbf d_2}{2}ight)
+mathbf E_1left(mathbf rpmrac{mathbf d_2}{2}
+ight)
 approx
 mathbf E_1(mathbf r)
 pm
@@ -162,7 +168,8 @@ left[
 5(mathbf p_1cdothat{mathbf r})
 (mathbf p_2cdothat{mathbf r})
 hat{mathbf r}
-ight]
+
+ight]
 }
 ]
 
