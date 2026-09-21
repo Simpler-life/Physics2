@@ -1,110 +1,78 @@
 # Physics Math Toolkit
 
-这个文件夹专门整理《普通物理 II》里真正会用到的数学工具。目标不是单独学一门高等数学，而是做到：看到物理公式时，知道每个数学符号在表达什么；知道为什么这样写；知道做题时怎么操作。
+这个文件夹只整理《普通物理 II》中真正需要补充的**大学新数学**。高中数学默认已有较扎实基础，因此不再从基础三角函数、普通函数等内容重新讲起。
 
-当前进度：**Lecture 1–3（静电场、Gauss 定律、电势）**
+## 当前状态
 
-## 学习原则
+符号：
 
-- 按依赖关系学习，一次只学一个主题。
-- 每个主题都包含：直觉 → 数学定义 → 物理里的意义 → 最小例题 → 易错点。
-- 不默认已经熟练掌握高数或线代。
-- 只讲当前物理课程真正需要的深度；以后遇到新数学工具再扩充。
+- ✅ 已经结合物理学过
+- 🟡 碰到过，但尚未系统整理
+- ⬜ 尚未学习 / 待完成
 
-## Lecture 1–3 数学路线
+### Lecture 1–3 数学路线
 
-1. **向量最基础：标量、向量、坐标分量、单位向量**
-   - 为什么电场/力必须写成向量
-   - i-hat、j-hat、k-hat 与 r-hat
-   - 向量的模、加减、分解
+- ✅ **向量与单位方向向量**
+  - $\vec r$、$r=|\vec r|$、$\hat r$
+  - $\vec r_{12}=\vec r_2-\vec r_1$
+  - $\hat r/r^2=\vec r/r^3$
 
-2. **三角函数与向量分解**
-   - sin(theta)、cos(theta) 的几何意义
-   - 为什么常出现 E cos(theta)
-   - 对称性导致某些分量抵消
+- 🟡 **向量分量与对称性**
+  - 已在圆盘电场中使用“横向分量抵消、轴向分量相加”
+  - 尚未单独整理成数学卡片
 
-3. **点积 Dot Product**
-   - A·B = AB cos(theta)
-   - 投影
-   - 功 dW = F·ds
-   - 电通量 dPhi = E·dA
+- ⬜ **点积 Dot Product**
+  - $A\cdot B=AB\cos\theta$
+  - 电通量、功中的应用
 
-4. **叉积 Cross Product**
-   - A×B
-   - 右手定则
-   - 面积解释
-   - 力矩 tau = p×E
+- ⬜ **叉积 Cross Product**
+  - 右手定则
+  - 力矩等应用
 
-5. **函数、极限与近似**
-   - 一元/多元函数
-   - “r >> d”到底是什么意思
-   - 主导项（leading term）
-   - 远场近似
+- ⬜ **极限、远场近似与 leading term**
 
-6. **Taylor 展开与常用小量近似**
-   - (1+x)^n 的近似
-   - sin x ≈ x
-   - cos x ≈ 1-x^2/2
-   - 电偶极子远场近似
+- ⬜ **Taylor / binomial approximation**
+  - $(1+x)^n$
+  - 小量展开
+  - 圆盘远场、电偶极子远场
 
-7. **从求和到积分**
-   - sum -> integral
-   - 微元是什么意思
-   - 为什么连续电荷必须积分
-   - dq = lambda dl, dq = sigma dA, dq = rho dV
+- ✅ **从求和到积分**
+  - $\sum\rightarrow\int$
+  - $dq$
+  - $dq=\lambda dl$
+  - $dq=\sigma dA$
+  - $dq=\rho dV$
 
-8. **坐标系与微元**
-   - 直角坐标、柱坐标、球坐标
-   - 坐标变换
-   - ds、dA、dV
-   - 球坐标体积元
+- 🟡 **微元的选择**
+  - 已学圆环微元 $dA=2\pi r\,dr$
+  - 柱坐标、球坐标中的一般微元尚未学
 
-9. **曲面积分与电通量**
-   - 面元向量 dA
-   - Phi = integral E·dA
-   - 闭合曲面与 closed-surface integral
-   - Gauss 定律里“积分整个表面”是什么意思
+- ⬜ **坐标系与 Jacobian / 体积元**
+  - 柱坐标
+  - 球坐标
+  - $dV=r^2\sin\theta\,dr\,d\theta\,d\phi$
 
-10. **对称性作为计算工具**
-    - 球对称、柱对称、平面对称
-    - 为什么对称性允许把 E 从积分号里拿出来
-    - 什么时候不能这样做
+- ⬜ **曲面积分与电通量**
+  - $d\vec A$
+  - $\int \vec E\cdot d\vec A$
+  - $\oint$
 
-11. **线积分**
-    - 路径、微小位移 ds
-    - integral_C F·ds
-    - 为什么电势差是电场的线积分
+- ⬜ **Gauss 定律中对称性的数学处理**
 
-12. **保守场与路径无关**
-    - 同起点终点，不同路径
-    - 闭合回路积分
-    - 静电力为什么对应势能/电势
+- ⬜ **线积分**
+  - $\int_C \vec E\cdot d\vec l$
 
-13. **偏导数与梯度 Gradient**
-    - V(x,y,z) 是什么
-    - partial V / partial x 与普通导数的区别
-    - grad V
-    - E = -grad V
+- ⬜ **保守场与路径无关**
 
-14. **等势面与梯度的几何意义**
-    - 梯度为什么垂直等势面
-    - 电场为什么指向电势下降最快方向
+- ⬜ **偏导数与梯度**
+  - $\partial/\partial x$
+  - $\nabla V$
+  - $\vec E=-\nabla V$
 
-## 文件规划
+- ⬜ **等势面与梯度几何意义**
 
-01_Vector_Basics.md  
-02_Trigonometry_and_Components.md  
-03_Dot_Product.md  
-04_Cross_Product.md  
-05_Limits_and_Approximations.md  
-06_Taylor_Expansion.md  
-07_Sum_to_Integral.md  
-08_Coordinates_and_Differentials.md  
-09_Surface_Integral_and_Flux.md  
-10_Symmetry.md  
-11_Line_Integral.md  
-12_Conservative_Field.md  
-13_Partial_Derivatives_and_Gradient.md  
-14_Equipotential_and_Gradient.md
+## 管理方式
 
-> 随学习进度逐个补充，不一次性塞满。
+- 已经真正学懂的内容再整理进本目录。
+- 尚未学习的知识统一记在仓库根目录 \`Pending/Knowledge_TODO.md\`。
+- 尚未完成或准备做的题统一记在 \`Pending/Problems_TODO.md\`。
