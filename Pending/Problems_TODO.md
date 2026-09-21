@@ -1,24 +1,17 @@
-# 未做 / 待复盘题目
+# 未解决题目索引
 
-## 当前
+> 本文件不是题目正文仓库。  
+> **所有条目必须来自 [`Unresolved_Problems/`](../Unresolved_Problems/) 中已经存在的题目笔记。**
 
-- [ ] **Textbook chap01 - Problem 10**
-  - 主题：electrostatic force vs gravitational force；氢原子电中性精度
-  - 状态：准备现在开始做
-  - 来源：用户提供的 chap01 第 10 题截图
-  - 目标：
-    1. 计算电子与质子之间静电力/万有引力之比；
-    2. 解释为什么比值与距离无关；
-    3. 求氢原子净电荷偏差参数 $|\delta|$，使两个氢原子的静电斥力恰好抵消万有引力；
-    4. 再次说明结果与距离无关。
+## 当前未解决题
 
-## 使用规则
+- [ ] [Chap01 Exercise 3 — Dipole–Dipole Force](../Unresolved_Problems/Chap01_Exercise03_Dipole_Dipole_Force.md)
+  - 当前卡点：Taylor 一阶近似、$\nabla$ 与方向导数、从 $(\mathbf p_2\cdot\nabla)\mathbf E_1$ 展开到最终表达式。
 
-以后遇到以下情况都先放这里：
+## 维护规则
 
-- 主线学习过程中临时跳过的题；
-- 做到一半需要补知识后再回来的题；
-- 值得二刷的错题；
-- 历年卷中暂时不准备处理的题。
-
-完成后把 \`[ ]\` 改成 \`[x]\`，并补一行简短复盘。
+- 新题：**先创建** `Unresolved_Problems/ChapXX_ExerciseYY_*.md`，再把链接加入这里。
+- 没有对应题目文件的内容，不得加入本 TODO。
+- 这里只写链接、状态和极短备注，不复制题目全文或完整推导。
+- 题目真正解决后，从本索引移除。
+- 题目正文、推导、卡点、原题截图等始终维护在对应的 `Unresolved_Problems/` 文件中。
