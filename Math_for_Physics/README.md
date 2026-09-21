@@ -73,6 +73,7 @@
 
 ## 管理方式
 
-- 已经真正学懂的内容再整理进本目录。
-- 尚未学习的知识统一记在仓库根目录 \`Pending/Knowledge_TODO.md\`。
-- 尚未完成或准备做的题统一记在 \`Pending/Problems_TODO.md\`。
+- 已经真正学懂的大学数学再整理进本目录。
+- 尚未学习的知识统一记在 [`Pending/Knowledge_TODO.md`](../Pending/Knowledge_TODO.md)。
+- 未解决题本身存放在 [`Unresolved_Problems/`](../Unresolved_Problems/)；[`Pending/Problems_TODO.md`](../Pending/Problems_TODO.md) 只作为其索引。
+- 完整仓库维护规则见 [根目录 README](../README.md)。
