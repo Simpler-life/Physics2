@@ -1,10 +1,16 @@
 # Pending
 
-这个目录位于仓库根目录，作为学习过程中的“暂存区”。
+这个目录是学习过程中的**待办与状态索引区**，不保存详细题目正文。
 
-当主线学习需要临时跳过某段内容，或者发现一道之后要做的题时，不强行打断当前任务，而是先放到这里。
+## 文件职责
 
-- \`Knowledge_TODO.md\`：尚未学习、只碰到但没有真正学懂的知识。
-- \`Problems_TODO.md\`：未做、未完成、准备之后复盘的题目。
+- [Knowledge_TODO.md](Knowledge_TODO.md)
+  - 记录已经遇到、但尚未系统学习或尚未真正理解的知识。
+  - 学懂后，把内容整理进对应的 Lecture / Math 笔记，并从 TODO 中删除或改为完成。
 
-完成后再把知识整理进对应 Lecture / Math 笔记，并把这里的状态改为完成。
+- [Problems_TODO.md](Problems_TODO.md)
+  - 只索引 [`../Unresolved_Problems/`](../Unresolved_Problems/) 中已经存在的未解决题。
+  - 它不是独立题库，也不复制题目全文。
+  - 没有对应 `Unresolved_Problems/` 文件的题目不能写进这里。
+
+完整仓库维护规则见根目录 [README.md](../README.md)。
