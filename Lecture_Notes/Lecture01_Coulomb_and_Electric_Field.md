@@ -7,9 +7,9 @@
 
 电荷量子化：
 
-$$
+\`\`\`math
 q=ne
-$$
+\`\`\`
 
 其中 $e$ 为基本电荷。
 
@@ -19,31 +19,31 @@ $$
 
 两点电荷之间的静电力：
 
-$$
+\`\`\`math
 \vec F_{12}
 =
 \frac{1}{4\pi\varepsilon_0}
 \frac{q_1q_2}{r_{12}^2}
 \hat r_{12}
-$$
+\`\`\`
 
 ### 方向记号
 
 若采用“从 1 指向 2”的约定：
 
-$$
+\`\`\`math
 \vec r_{12}=\vec r_2-\vec r_1
-$$
+\`\`\`
 
-$$
+\`\`\`math
 r_{12}=|\vec r_{12}|
-$$
+\`\`\`
 
-$$
+\`\`\`math
 \hat r_{12}
 =
 \frac{\vec r_{12}}{|\vec r_{12}|}
-$$
+\`\`\`
 
 要区分：
 
@@ -53,44 +53,44 @@ $$
 
 并且：
 
-$$
+\`\`\`math
 \frac{\hat r}{r^2}
 =
 \frac{\vec r}{r^3}
-$$
+\`\`\`
 
 ## 3. 叠加原理
 
 多个点电荷共同作用时，总力或总电场是各自贡献的**向量和**：
 
-$$
+\`\`\`math
 \vec F_{\text{total}}=\sum_i \vec F_i
-$$
+\`\`\`
 
-$$
+\`\`\`math
 \vec E_{\text{total}}=\sum_i \vec E_i
-$$
+\`\`\`
 
 ## 4. 电场定义
 
-$$
+\`\`\`math
 \vec E=\frac{\vec F}{q_0}
-$$
+\`\`\`
 
 反过来：
 
-$$
+\`\`\`math
 \vec F=q\vec E
-$$
+\`\`\`
 
 点电荷 $Q$ 产生的电场：
 
-$$
+\`\`\`math
 \vec E
 =
 \frac{1}{4\pi\varepsilon_0}
 \frac{Q}{r^2}\hat r
-$$
+\`\`\`
 
 ## 5. 连续电荷：从求和到积分
 
@@ -98,42 +98,42 @@ $$
 
 > 把连续带电体切成无穷多个小电荷 $dq$，计算每个 $dq$ 产生的 $d\vec E$，再全部相加。
 
-$$
+\`\`\`math
 d\vec E
 =
 \frac{1}{4\pi\varepsilon_0}
 \frac{dq}{r^2}\hat r
-$$
+\`\`\`
 
-$$
+\`\`\`math
 \vec E=\int d\vec E
-$$
+\`\`\`
 
 三种常见电荷密度：
 
 ### 线电荷
 
-$$
+\`\`\`math
 \lambda=\frac{dq}{dl}
 \qquad\Rightarrow\qquad
 dq=\lambda\,dl
-$$
+\`\`\`
 
 ### 面电荷
 
-$$
+\`\`\`math
 \sigma=\frac{dq}{dA}
 \qquad\Rightarrow\qquad
 dq=\sigma\,dA
-$$
+\`\`\`
 
 ### 体电荷
 
-$$
+\`\`\`math
 \rho=\frac{dq}{dV}
 \qquad\Rightarrow\qquad
 dq=\rho\,dV
-$$
+\`\`\`
 
 ## 6. 对称性
 
@@ -153,79 +153,79 @@ $$
 
 小圆环面积：
 
-$$
+\`\`\`math
 dA=2\pi r\,dr
-$$
+\`\`\`
 
 所以：
 
-$$
+\`\`\`math
 dq=\sigma\,dA
 =
 2\pi\sigma r\,dr
-$$
+\`\`\`
 
 观察点到该圆环任一点的距离：
 
-$$
+\`\`\`math
 s=\sqrt{z^2+r^2}
-$$
+\`\`\`
 
 由于横向分量对称抵消，只剩 $z$ 分量：
 
-$$
+\`\`\`math
 dE_z=dE\cos\theta
-$$
+\`\`\`
 
 其中：
 
-$$
+\`\`\`math
 \cos\theta=\frac{z}{\sqrt{z^2+r^2}}
-$$
+\`\`\`
 
 得到：
 
-$$
+\`\`\`math
 dE_z
 =
 \frac{1}{4\pi\varepsilon_0}
 \frac{z\,dq}{(z^2+r^2)^{3/2}}
-$$
+\`\`\`
 
 代入 $dq$：
 
-$$
+\`\`\`math
 dE_z
 =
 \frac{\sigma z}{2\varepsilon_0}
 \frac{r\,dr}{(z^2+r^2)^{3/2}}
-$$
+\`\`\`
 
 积分：
 
-$$
+\`\`\`math
 E_z
 =
 \frac{\sigma z}{2\varepsilon_0}
 \int_0^R
 \frac{r\,dr}{(z^2+r^2)^{3/2}}
-$$
+\`\`\`
 
 令：
 
-$$
+\`\`\`math
 u=z^2+r^2
-$$
+\`\`\`
 
 则：
 
-$$
+\`\`\`math
 du=2r\,dr
-$$
+\`\`\`
 
 最终：
 
-$$
+\`\`\`math
 \boxed{
 \vec E
 =
@@ -234,13 +234,13 @@ $$
 1-\frac{z}{\sqrt{z^2+R^2}}
 \right)\hat z
 }
-$$
+\`\`\`
 
 ## 8. 当前理解重点
 
 目前已经掌握的核心不是“背最后答案”，而是连续电荷题的通用流程：
 
-$$
+\`\`\`math
 \text{选微元}
 \rightarrow
 dq
@@ -250,7 +250,7 @@ d\vec E
 \text{利用对称性取分量}
 \rightarrow
 \int d\vec E
-$$
+\`\`\`
 
 ## 9. 暂停点
 
