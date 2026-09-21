@@ -11,6 +11,10 @@
 
 ## Lecture 2
 
+- [ ] **为什么 uniformly charged spherical shell 内部电场处处为 0？**
+  - 需要真正理解：为什么仅由 $Q_{\rm enc}=0$ 还不能直接推出每一点 $E=0$；
+  - 需要结合 spherical symmetry 说明球面上 $E$ 的大小相同、方向沿径向；
+  - 需要明确这个结论成立的条件是“均匀带电球壳 + 球对称”，而不是任意带电壳体。
 - [ ] 电通量的完整定义
 - [ ] 点积在 $d\Phi=\vec E\cdot d\vec A$ 中的意义
 - [ ] 面元向量 $d\vec A$
