@@ -10,17 +10,20 @@ Lecture 1 主线已完成到作业可用水平。以下仅保留尚未系统掌�
 
 ## Lecture 2
 
-- [ ] **为什么 uniformly charged spherical shell 内部电场处处为 0？**
-  - 需要真正理解：为什么仅由 $Q_{\rm enc}=0$ 还不能直接推出每一点 $E=0$；
-  - 需要结合 spherical symmetry 说明球面上 $E$ 的大小相同、方向沿径向；
-  - 需要明确这个结论成立的条件是“均匀带电球壳 + 球对称”，而不是任意带电壳体。
-- [ ] 电通量的完整定义
-- [ ] 点积在 $d\Phi=\vec E\cdot d\vec A$ 中的意义
-- [ ] 面元向量 $d\vec A$
-- [ ] 曲面积分
-- [ ] 闭合曲面积分 $\oint$
-- [ ] Gauss 定律的数学结构
+已掌握：
+- [x] uniformly charged spherical shell 内部为什么 $E=0$
+  - 已理解不能仅由 $Q_{\rm enc}=0$ 推出局部 $E=0$
+  - 已理解还需要 spherical symmetry，使 Gaussian sphere 上 $E$ 等大且沿径向
+- [x] 电通量的基本定义
+- [x] 点积在 $\vec E\cdot d\vec A$ 中的意义
+- [x] 闭合曲面面积向量 $d\vec A$ 的外法线方向
+- [x] 用“小面积求和”理解基础曲面积分
+- [x] 闭合曲面积分符号 $\oint$
+- [x] Gauss 定律的基本数学结构
+
+待继续：
 - [ ] 球坐标/柱坐标相关微元（按实际做题需要学习）
+- [ ] Gauss 定律在均匀带电实心球、无限长线电荷、无限大平面等典型对称体系中的应用
 
 ## Lecture 3
 
