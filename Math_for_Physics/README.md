@@ -17,24 +17,27 @@
   - $\vec r_{12}=\vec r_2-\vec r_1$
   - $\hat r/r^2=\vec r/r^3$
 
-- 🟡 **向量分量与对称性**
+- ✅ **向量分量与对称性**
   - 已在圆盘电场中使用“横向分量抵消、轴向分量相加”
-  - 尚未单独整理成数学卡片
 
-- ⬜ **点积 Dot Product**
-  - $A\cdot B=AB\cos\theta$
-  - 电通量、功中的应用
+- ✅ **点积 Dot Product**
+  - $\vec A\cdot\vec B=AB\cos\theta$
+  - 已用于偶极子远场中的 $\vec p\cdot\hat r$
+  - Lecture 2 将继续用于电通量
 
-- ⬜ **叉积 Cross Product**
-  - 右手定则
-  - 力矩等应用
+- ✅ **叉积 Cross Product**
+  - $|\vec A\times\vec B|=AB\sin\theta$
+  - 方向由右手定则决定
+  - 已用于 $\vec\tau=\vec p\times\vec E$
 
-- ⬜ **极限、远场近似与 leading term**
+- ✅ **极限、远场近似与 leading term**
+  - 当观察距离远大于带电体尺寸时，保留主导项
+  - 已用于证明远处均匀带电圆盘等效为点电荷
 
-- ⬜ **Taylor / binomial approximation**
-  - $(1+x)^n$
-  - 小量展开
-  - 圆盘远场、电偶极子远场
+- ✅ **Taylor / binomial approximation（基础一阶）**
+  - $|x|\ll1$ 时，$(1+x)^n\approx1+nx$
+  - 特别地，$(1+x)^{-1/2}\approx1-x/2$
+  - 已用于圆盘远场；更高阶展开和三维矢量场 Taylor 展开仍未系统掌握
 
 - ✅ **从求和到积分**
   - $\sum\rightarrow\int$
