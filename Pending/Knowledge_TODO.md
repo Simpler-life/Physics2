@@ -2,12 +2,11 @@
 
 ## Lecture 1
 
-- [ ] 均匀带电圆盘的远场极限 $z\gg R$
-- [ ] leading term（主导项）在物理近似中的含义
-- [ ] Taylor expansion / binomial approximation
-- [ ] 用小量展开证明远处圆盘等效为点电荷
-- [ ] Electric dipole 后续公式与其中的近似方法
-- [ ] 若 Lecture 1 后续出现新的大学数学工具，继续追加
+Lecture 1 主线已完成到作业可用水平。以下仅保留尚未系统掌握的进阶数学，不视为 Lecture 1 主线未完成：
+
+- [ ] 三维矢量场 Taylor 展开与方向导数
+- [ ] 梯度 $\nabla$ 在 dipole–dipole force 推导中的完整应用
+- [ ] 从 $(\mathbf p_2\cdot\nabla)\mathbf E_1$ 展开到偶极子间作用力的最终表达式
 
 ## Lecture 2
 
