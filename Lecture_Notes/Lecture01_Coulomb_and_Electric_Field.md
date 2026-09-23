@@ -1,7 +1,7 @@
 # Lecture 1 学习记录：Coulomb's Law and Electric Field
 
-> 状态：学习中  
-> 当前停点：均匀带电圆盘轴线上电场；远场近似暂未继续。
+> 状态：✅ 已完成到作业可用水平  
+> 学习目标：能识别并处理点电荷、连续电荷、远场近似、电偶极子与均匀电场中的典型问题。
 
 ## 1. 电荷与基本关系
 
@@ -47,9 +47,9 @@ r_{12}=|\vec r_{12}|
 
 要区分：
 
-- $\vec r$：位置/位移向量
-- $r=|\vec r|$：长度
-- $\hat r$：单位方向向量
+- $\vec r$：位置/位移向量，有方向
+- $r=|\vec r|$：距离/长度，没有方向
+- $\hat r$：单位方向向量，表示方向
 
 并且：
 
@@ -91,6 +91,13 @@ r_{12}=|\vec r_{12}|
 \frac{1}{4\pi\varepsilon_0}
 \frac{Q}{r^2}\hat r
 ```
+
+### 方向
+
+这里 $\hat r$ 定义为**从源电荷 $Q$ 指向观察点**。
+
+- $Q>0$：$\vec E$ 与 $\hat r$ 同向，电场向外。
+- $Q<0$：$\vec E$ 与 $\hat r$ 反向，电场指向负电荷。
 
 ## 5. 连续电荷：从求和到积分
 
@@ -149,23 +156,17 @@ dq=\rho\,dV
 
 半径 $R$、面电荷密度 $\sigma$ 的均匀带电圆盘，在中心轴线上距离中心 $z$ 的位置求电场。
 
-把圆盘切成半径 $r$、厚度 $dr$ 的同心圆环。
-
-小圆环面积：
+把圆盘切成半径 $r$、厚度 $dr$ 的同心圆环：
 
 ```math
 dA=2\pi r\,dr
 ```
 
-所以：
-
 ```math
-dq=\sigma\,dA
-=
-2\pi\sigma r\,dr
+dq=\sigma dA=2\pi\sigma r\,dr
 ```
 
-观察点到该圆环任一点的距离：
+观察点到圆环任一点的距离：
 
 ```math
 s=\sqrt{z^2+r^2}
@@ -177,22 +178,11 @@ s=\sqrt{z^2+r^2}
 dE_z=dE\cos\theta
 ```
 
-其中：
-
 ```math
 \cos\theta=\frac{z}{\sqrt{z^2+r^2}}
 ```
 
-得到：
-
-```math
-dE_z
-=
-\frac{1}{4\pi\varepsilon_0}
-\frac{z\,dq}{(z^2+r^2)^{3/2}}
-```
-
-代入 $dq$：
+因此
 
 ```math
 dE_z
@@ -201,29 +191,7 @@ dE_z
 \frac{r\,dr}{(z^2+r^2)^{3/2}}
 ```
 
-积分：
-
-```math
-E_z
-=
-\frac{\sigma z}{2\varepsilon_0}
-\int_0^R
-\frac{r\,dr}{(z^2+r^2)^{3/2}}
-```
-
-令：
-
-```math
-u=z^2+r^2
-```
-
-则：
-
-```math
-du=2r\,dr
-```
-
-最终：
+积分得到：
 
 ```math
 \boxed{
@@ -236,9 +204,7 @@ du=2r\,dr
 }
 ```
 
-## 8. 当前理解重点
-
-目前已经掌握的核心不是“背最后答案”，而是连续电荷题的通用流程：
+连续电荷题的通用流程：
 
 ```math
 \text{选微元}
@@ -252,10 +218,305 @@ d\vec E
 \int d\vec E
 ```
 
-## 9. 暂停点
+## 8. 远场近似与 leading term
 
-以下内容暂时不继续，统一放入仓库根目录的 `Pending/` 中管理：
+当 $z\gg R$ 时：
 
-- 远场近似
-- Taylor / binomial approximation
-- Lecture 1 后续尚未系统补齐的大学数学工具
+```math
+\frac{R^2}{z^2}\ll1
+```
+
+使用二项式近似：
+
+```math
+(1+x)^n\approx1+nx,\qquad |x|\ll1
+```
+
+于是：
+
+```math
+\left(1+\frac{R^2}{z^2}\right)^{-1/2}
+\approx
+1-\frac{R^2}{2z^2}
+```
+
+代回圆盘电场：
+
+```math
+E_z
+\approx
+\frac{\sigma R^2}{4\varepsilon_0z^2}
+```
+
+又因为
+
+```math
+Q=\sigma\pi R^2
+```
+
+所以：
+
+```math
+\boxed{
+E_z
+\approx
+\frac{1}{4\pi\varepsilon_0}
+\frac{Q}{z^2}
+}
+```
+
+物理意义：当观察距离远大于带电体尺寸时，远处主要“看见”总电荷，圆盘可近似为点电荷。
+
+## 9. Electric Dipole
+
+电偶极子由两个等量异号电荷 $-q$ 与 $+q$ 构成。
+
+偶极矩定义：
+
+```math
+\boxed{\vec p=q\vec d}
+```
+
+### 方向定义
+
+**$\vec d$ 从 $-q$ 指向 $+q$，因此 $\vec p$ 也从负电荷指向正电荷。**
+
+设偶极子中心为参考点，观察点的位置向量定义为：
+
+```math
+\vec r=\text{从 dipole 中心指向观察点}
+```
+
+```math
+r=|\vec r|,
+\qquad
+\hat r=\frac{\vec r}{r}
+```
+
+其中：
+
+- $\vec r$ 有方向；
+- $r$ 只是距离；
+- $\hat r$ 给出从偶极子中心到观察点的方向。
+
+远场 $r\gg d$ 时：
+
+```math
+\boxed{
+\vec E(\vec r)
+=
+\frac{1}{4\pi\varepsilon_0r^3}
+\left[
+3(\vec p\cdot\hat r)\hat r-\vec p
+\right]
+}
+```
+
+因此：
+
+```math
+E_{\text{dipole}}\sim \frac1{r^3}
+```
+
+### 轴线上
+
+观察点位于 $\vec p$ 所在直线上。
+
+若观察点在 $\vec p$ 指向的一侧：
+
+```math
+\boxed{
+\vec E_{\rm axial}
+=
+\frac{1}{4\pi\varepsilon_0}
+\frac{2p}{r^3}\hat r
+}
+```
+
+方向沿偶极矩向外的一侧；若观察点在另一侧，应结合 $\hat r$ 和完整矢量式判断。
+
+### 中垂线上（equatorial line）
+
+此时：
+
+```math
+\vec p\perp\vec r
+```
+
+所以：
+
+```math
+\vec p\cdot\hat r=0
+```
+
+完整矢量结果：
+
+```math
+\boxed{
+\vec E_{\rm equatorial}
+=
+-\frac{1}{4\pi\varepsilon_0}
+\frac{\vec p}{r^3}
+}
+```
+
+因此大小：
+
+```math
+E_{\rm equatorial}
+=
+\frac{1}{4\pi\varepsilon_0}
+\frac{p}{r^3}
+```
+
+方向：**与 $\vec p$ 反向。**
+
+## 10. 带电粒子在均匀电场中
+
+核心关系：
+
+```math
+\boxed{\vec F=q\vec E}
+```
+
+方向：
+
+- $q>0$：$\vec F$ 与 $\vec E$ 同向；
+- $q<0$：$\vec F$ 与 $\vec E$ 反向。
+
+若电场均匀：
+
+```math
+\vec a=\frac{q\vec E}{m}
+```
+
+若粒子初速度与电场垂直：
+
+```math
+x=v_0t
+```
+
+```math
+y=\frac12\frac{qE}{m}t^2
+```
+
+消去 $t$：
+
+```math
+\boxed{
+y=\frac{qE}{2mv_0^2}x^2
+}
+```
+
+轨迹为抛物线；若 $q<0$，弯曲方向与电场方向相反。
+
+## 11. 偶极子在均匀电场中的力矩
+
+均匀电场中，$+q$ 与 $-q$ 所受电场力大小相等、方向相反，所以净力为 0，但一般有力矩。
+
+两个电荷相对偶极子中心的位置：
+
+```math
+\vec r_+=\frac{\vec d}{2},
+\qquad
+\vec r_-=-\frac{\vec d}{2}
+```
+
+受力：
+
+```math
+\vec F_+=q\vec E,
+\qquad
+\vec F_-=-q\vec E
+```
+
+单个电荷的力矩都带有 $1/2$：
+
+```math
+\vec\tau_+
+=
+\frac{\vec d}{2}\times q\vec E
+```
+
+```math
+\vec\tau_-
+=
+\left(-\frac{\vec d}{2}\right)\times(-q\vec E)
+```
+
+两者方向相同，相加后 $1/2$ 消失：
+
+```math
+\vec\tau
+=
+q\vec d\times\vec E
+```
+
+利用 $\vec p=q\vec d$：
+
+```math
+\boxed{
+\vec\tau=\vec p\times\vec E
+}
+```
+
+大小：
+
+```math
+\boxed{
+\tau=pE\sin\theta
+}
+```
+
+其中 $\theta$ 是从 $\vec p$ 转到 $\vec E$ 的夹角。
+
+方向：由 $\vec p\times\vec E$ 的**右手定则**确定。
+
+这个力矩会使偶极子趋向于让 $\vec p$ 与 $\vec E$ 同向。
+
+势能：
+
+```math
+\boxed{
+U=-\vec p\cdot\vec E=-pE\cos\theta
+}
+```
+
+稳定平衡：$\vec p\parallel\vec E$。
+
+## 12. 本 Lecture 用到的向量运算
+
+点积：
+
+```math
+\vec A\cdot\vec B=AB\cos\theta
+```
+
+结果是标量，用于描述两个向量沿彼此方向的投影关系。
+
+叉积：
+
+```math
+|\vec A\times\vec B|=AB\sin\theta
+```
+
+结果是向量，方向由右手定则决定。
+
+Lecture 1 中最直接的应用：
+
+```math
+\vec\tau=\vec p\times\vec E
+```
+
+## 13. 作业识别框架
+
+看到题目先判断：
+
+1. **离散点电荷**：$\vec E=\sum_i\vec E_i$
+2. **连续带电体**：$dq\rightarrow d\vec E\rightarrow$ 对称性 $\rightarrow\int$
+3. **远场**：检查“观察距离 $\gg$ 源尺寸”，考虑小量展开
+4. **偶极子**：先写 $\vec p=q\vec d$，并标清 $\vec p$ 的方向
+5. **粒子运动**：$\vec F=q\vec E$，再用牛顿运动学
+6. **偶极子在均匀场中**：净力为 0，一般有 $\vec\tau=\vec p\times\vec E$
+
+> 之后遇到任何有方向的物理量，笔记必须同时写清：**方向如何定义、单位向量指向哪里、最后结果方向如何判断**。
