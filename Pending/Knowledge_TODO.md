@@ -10,20 +10,22 @@ Lecture 1 主线已完成到作业可用水平。以下仅保留尚未系统掌�
 
 ## Lecture 2
 
-已掌握：
-- [x] uniformly charged spherical shell 内部为什么 $E=0$
-  - 已理解不能仅由 $Q_{\rm enc}=0$ 推出局部 $E=0$
-  - 已理解还需要 spherical symmetry，使 Gaussian sphere 上 $E$ 等大且沿径向
-- [x] 电通量的基本定义
-- [x] 点积在 $\vec E\cdot d\vec A$ 中的意义
-- [x] 闭合曲面面积向量 $d\vec A$ 的外法线方向
-- [x] 用“小面积求和”理解基础曲面积分
-- [x] 闭合曲面积分符号 $\oint$
-- [x] Gauss 定律的基本数学结构
+Lecture 2 主线已完成到作业可用水平。
 
-待继续：
-- [ ] 球坐标/柱坐标相关微元（按实际做题需要学习）
-- [ ] Gauss 定律在均匀带电实心球、无限长线电荷、无限大平面等典型对称体系中的应用
+已掌握：
+- [x] Electric flux 与面积向量方向
+- [x] 用“小面积求和”理解曲面积分
+- [x] Gauss 定律的数学结构
+- [x] $Q_{\rm enc}=0$ 不能一般性推出局部 $E=0$
+- [x] uniformly charged spherical shell
+- [x] uniformly charged solid sphere
+- [x] infinite line charge / cylindrical symmetry
+- [x] infinite charged plane / planar symmetry
+- [x] two infinite parallel sheets + superposition
+- [x] 判断什么时候 Gauss 定律适合直接求 $E$
+
+仍按需补充：
+- [ ] 球坐标/柱坐标相关微元与 Jacobian（遇到实际积分题时再系统补）
 
 ## Lecture 3
 
