@@ -1,7 +1,7 @@
 # Lecture 2 学习记录：Electric Flux and Gauss' Law
 
-> 状态：学习中  
-> 当前进度：已理解 electric flux 的基本含义、Gaussian surface 的面积向量方向、Gauss 定律结构，以及均匀带电球壳内外电场。
+> 状态：✅ 已完成到作业可用水平  
+> 核心目标：会用对称性选择 Gaussian surface，并处理球对称、柱对称和平面对称的典型题。
 
 ## 1. Electric Flux
 
@@ -244,3 +244,103 @@ Q_{\rm enc}
 ```
 
 使用 Gauss 定律真正的关键，是选到一个能利用对称性把 $E$ 从积分中提出的 Gaussian surface。
+
+
+## 6. 典型对称体系补充
+
+### 均匀带电实心球
+
+球外 $r>R$：
+
+```math
+E(r)=\frac{1}{4\pi\varepsilon_0}\frac{Q}{r^2}
+```
+
+球内 $r<R$ 时，均匀体电荷给出
+
+```math
+Q_{\rm enc}=Q\frac{r^3}{R^3}
+```
+
+所以
+
+```math
+\boxed{
+E(r)=\frac{1}{4\pi\varepsilon_0}\frac{Q}{R^3}r
+}
+```
+
+因此实心球内部 $E\propto r$。
+
+### 无限长线电荷
+
+线电荷密度为 $\lambda$。$\hat r$ 定义为从轴线垂直指向观察点。取同轴 Gaussian cylinder，只有侧面有通量：
+
+```math
+E(2\pi rL)=\frac{\lambda L}{\varepsilon_0}
+```
+
+因此
+
+```math
+\boxed{
+E=\frac{\lambda}{2\pi\varepsilon_0r}
+}
+```
+
+即 $E\propto 1/r$。
+
+### 无限大带电平面
+
+面电荷密度为 $\sigma$。电场垂直于平面。取 pillbox：
+
+```math
+2EA=\frac{\sigma A}{\varepsilon_0}
+```
+
+因此
+
+```math
+\boxed{
+E=\frac{|\sigma|}{2\varepsilon_0}
+}
+```
+
+方向：$\sigma>0$ 时两侧都远离平面，$\sigma<0$ 时两侧都指向平面。
+
+理想无限平面的场强与距离无关。
+
+### 两个无限平行带电平面
+
+对 $+\sigma$ 与 $-\sigma$：
+
+```math
+\boxed{
+E_{\rm inside}=\frac{\sigma}{\varepsilon_0},
+\qquad
+E_{\rm outside}=0
+}
+```
+
+板间方向从正板指向负板。
+
+## 7. Gauss 定律何时好用
+
+Gauss 定律始终成立，但只有对称性足够强时才方便直接求 $E$。
+
+典型匹配：
+
+- spherical symmetry $\rightarrow$ sphere
+- cylindrical symmetry $\rightarrow$ coaxial cylinder
+- planar symmetry $\rightarrow$ pillbox
+
+核心不是“有高斯面就能求 $E$”，而是能否利用对称性把 $E$ 从曲面积分中提出。
+
+## 8. 作业识别框架
+
+1. 判断对称性。
+2. 选择匹配的 Gaussian surface。
+3. 明确 $d\vec A$ 的方向。
+4. 判断哪些表面通量为 0，哪些能写成 $E\,dA$。
+5. 计算真正的 $Q_{\rm enc}$。
+6. 最后用 Gauss 定律求 $E$。
