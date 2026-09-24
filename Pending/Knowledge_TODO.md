@@ -29,10 +29,21 @@ Lecture 2 主线已完成到作业可用水平。
 
 ## Lecture 3
 
-- [ ] 功与线积分
-- [ ] 电势差与 $\int\vec E\cdot d\vec l$
-- [ ] 保守场、路径无关
+Lecture 3 主线已完成到作业可用水平。
+
+已掌握：
+- [x] 功与线积分
+- [x] 电势差与 $\int\vec E\cdot d\vec l$
+- [x] 保守场、路径无关
+- [x] 点电荷 / 多点电荷 / dipole 的电势
+- [x] equipotential surface 与电场方向关系
+- [x] 均匀电场中的电势差
+- [x] 多点电荷系统静电势能与机械能守恒
+
+正在通过 Chapter 3 Exercise 2 补充：
 - [ ] 多元函数中的偏导数
-- [ ] 梯度 $\nabla V$
-- [ ] $\vec E=-\nabla V$
-- [ ] 等势面与梯度的几何关系
+- [ ] 从 $V(x,y,z)$ 计算 $\vec E$
+- [ ] $\vec E=-\nabla V$ 的运算形式
+
+留到 Chapter 4 系统学习：
+- [ ] gradient $\nabla$ 的完整定义与几何意义
