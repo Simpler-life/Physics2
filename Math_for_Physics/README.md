@@ -55,24 +55,24 @@
   - 球坐标
   - $dV=r^2\sin\theta\,dr\,d\theta\,d\phi$
 
-- ⬜ **曲面积分与电通量**
+- ✅ **曲面积分与电通量**
   - $d\vec A$
   - $\int \vec E\cdot d\vec A$
   - $\oint$
 
-- ⬜ **Gauss 定律中对称性的数学处理**
+- ✅ **Gauss 定律中对称性的数学处理**
 
-- ⬜ **线积分**
+- ✅ **线积分**
   - $\int_C \vec E\cdot d\vec l$
 
-- ⬜ **保守场与路径无关**
+- ✅ **保守场与路径无关**
 
-- ⬜ **偏导数与梯度**
+- ✅ **偏导数与梯度**
   - $\partial/\partial x$
   - $\nabla V$
   - $\vec E=-\nabla V$
 
-- ⬜ **等势面与梯度几何意义**
+- ✅ **等势面与梯度几何意义**
 
 ## 管理方式
 
@@ -80,3 +80,19 @@
 - 尚未学习的知识统一记在 [`Pending/Knowledge_TODO.md`](../Pending/Knowledge_TODO.md)。
 - 未解决题本身存放在 [`Unresolved_Problems/`](../Unresolved_Problems/)；[`Pending/Problems_TODO.md`](../Pending/Problems_TODO.md) 只作为其索引。
 - 完整仓库维护规则见 [根目录 README](../README.md)。
+
+
+### Lecture 4 新增数学工具
+
+- ✅ **Divergence**
+  - $\nabla\cdot\vec A$
+  - 理解为局部“净流出程度”
+  - 已用于 $\nabla\cdot\vec E=\rho/\varepsilon_0$
+
+- ✅ **Curl**
+  - $\nabla\times\vec A$
+  - 已知静电场满足 $\nabla\times\vec E=0$
+
+- ✅ **Laplacian**
+  - $\nabla^2=\nabla\cdot\nabla$
+  - 已用于 Poisson / Laplace equation
