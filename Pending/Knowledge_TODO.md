@@ -40,10 +40,23 @@ Lecture 3 主线已完成到作业可用水平。
 - [x] 均匀电场中的电势差
 - [x] 多点电荷系统静电势能与机械能守恒
 
-正在通过 Chapter 3 Exercise 2 补充：
-- [ ] 多元函数中的偏导数
-- [ ] 从 $V(x,y,z)$ 计算 $\vec E$
-- [ ] $\vec E=-\nabla V$ 的运算形式
+已在 Lecture 4 中补齐：
+- [x] 多元函数中的偏导数
+- [x] 从 $V(x,y,z)$ 计算 $\vec E$
+- [x] $\vec E=-\nabla V$ 的运算形式
+- [x] gradient $\nabla$ 的定义与几何意义
 
-留到 Chapter 4 系统学习：
-- [ ] gradient $\nabla$ 的完整定义与几何意义
+## Lecture 4
+
+Lecture 4 主线已完成到作业可用水平。
+
+已掌握：
+- [x] gradient $\nabla f$
+- [x] $\vec E=-\nabla V$
+- [x] divergence $\nabla\cdot\vec E$
+- [x] Gauss 定律的 differential form
+- [x] Laplacian $\nabla^2$
+- [x] Poisson's equation
+- [x] Laplace's equation
+- [x] 静电场的 curl 为 0
+- [x] Triangle of Electrostatics
