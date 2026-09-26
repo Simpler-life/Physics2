@@ -14,6 +14,7 @@
 - [Lecture 1：Coulomb's Law and Electric Field](Lecture_Notes/Lecture01_Coulomb_and_Electric_Field.md)
 - [Lecture 2：Electric Flux and Gauss' Law](Lecture_Notes/Lecture02_Gauss_Law.md)
 - [Lecture 3：Electrostatic Potential](Lecture_Notes/Lecture03_Electrostatic_Potential.md)
+- [Lecture 4：Triangle of Electrostatics](Lecture_Notes/Lecture04_Triangle_of_Electrostatics.md)
 
 ### `Math_for_Physics/`
 物理中遇到的**大学新数学工具**。
