@@ -49,6 +49,13 @@
 - 不允许仅凭聊天里出现过一道题，就直接把它写进 `Problems_TODO.md`。
 - TODO 中不复制题目全文，避免与题目笔记产生两个版本。
 
+
+### `Mistake/`
+已经解决、但值得反复复盘的错题与思维误区。
+
+当前：
+- [Chapter 5 Exercise 3：Image Charge Mistakes](Mistake/Chap05_Exercise03_Image_Charge_Mistakes.md)
+
 ### `Pending/`
 **学习暂存区 / 索引区**，不作为详细知识或题目的主内容存储位置。
 
