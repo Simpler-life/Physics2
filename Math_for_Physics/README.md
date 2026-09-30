@@ -81,13 +81,17 @@
 - 未解决题本身存放在 [`Unresolved_Problems/`](../Unresolved_Problems/)；[`Pending/Problems_TODO.md`](../Pending/Problems_TODO.md) 只作为其索引。
 - 完整仓库维护规则见 [根目录 README](../README.md)。
 
-
-### Lecture 4 新增数学工具
+### Lecture 4–6 新增数学工具
 
 - ✅ **Divergence**
   - $\nabla\cdot\vec A$
   - 理解为局部“净流出程度”
   - 已用于 $\nabla\cdot\vec E=\rho/\varepsilon_0$
+
+- ✅ **[Divergence Theorem（散度定理）](01_Divergence_Theorem.md)**
+  - 将闭合曲面的总通量与体积内部的散度联系起来
+  - 已用于从 Gauss's law 的积分形式得到微分形式
+  - 已用于 Lecture 6 的 continuity equation
 
 - ✅ **Curl**
   - $\nabla\times\vec A$
