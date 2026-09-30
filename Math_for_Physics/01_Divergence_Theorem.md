@@ -9,13 +9,13 @@
 ```math
 \iiint_V (\nabla\cdot\vec F)\,dV
 =
-\oiint_S \vec F\cdot d\vec A
+\iint_{\partial V} \vec F\cdot d\vec A
 ```
 
 其中：
 
 - $V$ 是一个体积；
-- $S$ 是包围 $V$ 的闭合曲面；
+- $\partial V$ 表示体积 $V$ 的边界，也就是包围 $V$ 的闭合曲面；
 - $d\vec A$ 默认指向闭合曲面的外侧；
 - $\nabla\cdot\vec F$ 表示向量场 $\vec F$ 在某一点的 divergence（散度）。
 
@@ -48,7 +48,7 @@
 Gauss's law 的积分形式是：
 
 ```math
-\oiint_S \vec E\cdot d\vec A
+\iint_{\partial V} \vec E\cdot d\vec A
 =
 \frac{Q_{\mathrm{enc}}}{\varepsilon_0}
 ```
@@ -64,7 +64,7 @@ Q_{\mathrm{enc}}
 因此：
 
 ```math
-\oiint_S \vec E\cdot d\vec A
+\iint_{\partial V} \vec E\cdot d\vec A
 =
 \iiint_V \frac{\rho}{\varepsilon_0}\,dV
 ```
@@ -100,7 +100,7 @@ Q_{\mathrm{enc}}
 \iiint_V \rho\,dV
 =
 -
-\oiint_S \vec J\cdot d\vec A
+\iint_{\partial V} \vec J\cdot d\vec A
 ```
 
 其中：
@@ -111,7 +111,7 @@ Q_{\mathrm{enc}}
 对右边使用散度定理：
 
 ```math
-\oiint_S \vec J\cdot d\vec A
+\iint_{\partial V} \vec J\cdot d\vec A
 =
 \iiint_V (\nabla\cdot\vec J)\,dV
 ```
@@ -171,7 +171,7 @@ Q_{\mathrm{enc}}
 ### 曲面积分
 
 ```math
-\int_S \vec J\cdot d\vec A
+\iint_S \vec J\cdot d\vec A
 ```
 
 计算穿过一个面的电流。
@@ -179,10 +179,12 @@ Q_{\mathrm{enc}}
 ### 闭合曲面积分
 
 ```math
-\oiint_S \vec E\cdot d\vec A
+\iint_{\partial V} \vec E\cdot d\vec A
 ```
 
 计算穿过整个闭合曲面的 electric flux。
+
+这里没有使用 $\oiint$ 符号，而是通过下标 $\partial V$ 明确表示“对体积 $V$ 的整个闭合边界积分”。
 
 散度定理连接的是：
 
@@ -202,7 +204,7 @@ Q_{\mathrm{enc}}
 \boxed{
 \iiint_V (\nabla\cdot\vec F)\,dV
 =
-\oiint_S \vec F\cdot d\vec A
+\iint_{\partial V} \vec F\cdot d\vec A
 }
 ```
 
