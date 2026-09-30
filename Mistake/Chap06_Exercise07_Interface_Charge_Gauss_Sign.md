@@ -5,6 +5,9 @@
 
 ## 1. 原题结构
 
+<img width="1422" height="450" alt="image" src="https://github.com/user-attachments/assets/dfd1ba05-9cc0-46d1-89b4-4534f007220a" />
+
+
 两根长棒沿 $x$ 方向首尾相接，横截面积相同为 $A$，电导率分别为 $\sigma_1$ 和 $\sigma_2$。
 
 稳恒电流 $I>0$ 沿 $+x$ 方向从材料 1 流向材料 2。
