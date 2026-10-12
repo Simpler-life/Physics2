@@ -60,3 +60,16 @@ Lecture 4 主线已完成到作业可用水平。
 - [x] Laplace's equation
 - [x] 静电场的 curl 为 0
 - [x] Triangle of Electrostatics
+
+## Lecture 7
+
+已遇到但尚未系统掌握：
+
+- [ ] 一阶线性常微分方程 $y'+ay=b$ 的完整求解
+- [ ] 为什么 RC 方程的解必然出现指数项 $e^{-t/\tau}$
+- [ ] integrating factor（积分因子）方法
+- [ ] 齐次解 + 特解的结构
+- [ ] 初始条件如何决定积分常数
+
+当前已会识别并套用 RC 标准形式，详细记录见：
+[First-Order Linear ODE：RC 电路中的标准形式](../Math_for_Physics/02_First_Order_Linear_ODE_RC.md)
