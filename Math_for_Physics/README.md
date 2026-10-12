@@ -77,8 +77,8 @@
 ## 管理方式
 
 - 已经真正学懂的大学数学再整理进本目录。
-- 尚未学习的知识统一记在 [`Pending/Knowledge_TODO.md`](../Pending/Knowledge_TODO.md)。
-- 未解决题本身存放在 [`Unresolved_Problems/`](../Unresolved_Problems/)；[`Pending/Problems_TODO.md`](../Pending/Problems_TODO.md) 只作为其索引。
+- 尚未学习的知识统一记在 [Pending/Knowledge_TODO.md](../Pending/Knowledge_TODO.md)。
+- 未解决题本身存放在 [Unresolved_Problems/](../Unresolved_Problems/)；[Pending/Problems_TODO.md](../Pending/Problems_TODO.md) 只作为其索引。
 - 完整仓库维护规则见 [根目录 README](../README.md)。
 
 ### Lecture 4–6 新增数学工具
@@ -100,3 +100,10 @@
 - ✅ **Laplacian**
   - $\nabla^2=\nabla\cdot\nabla$
   - 已用于 Poisson / Laplace equation
+
+### Lecture 7 新增数学工具
+
+- 🟡 **[First-Order Linear ODE：RC 电路中的标准形式](02_First_Order_Linear_ODE_RC.md)**
+  - 已会识别 $\frac{dQ}{dt}+\frac{1}{\tau}Q=\frac{Q_\infty}{\tau}$
+  - 已会使用 $Q(t)=Q_\infty+(Q(0)-Q_\infty)e^{-t/\tau}$
+  - 尚未系统掌握完整推导、积分因子、齐次解与特解
