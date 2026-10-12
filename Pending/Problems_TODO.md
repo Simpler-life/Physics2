@@ -8,6 +8,9 @@
 - [ ] [Chap01 Exercise 3 — Dipole–Dipole Force](../Unresolved_Problems/Chap01_Exercise03_Dipole_Dipole_Force.md)
   - 当前卡点：Taylor 一阶近似、$\nabla$ 与方向导数、从 $(\mathbf p_2\cdot\nabla)\mathbf E_1$ 展开到最终表达式。
 
+- [ ] [Chap07 Exercise 9 — Movable Parallel-Plate Capacitor](../Unresolved_Problems/Chap07_Exercise09_Movable_Capacitor_Energy_Force.md)
+  - 当前卡点：固定 $Q$ 与固定 $V$ 时能量法的差别；为什么固定 $V$ 时不能直接用 $F=-dU/dd$；如何把电池做功纳入能量守恒。
+
 ## 维护规则
 
 - 新题：**先创建** `Unresolved_Problems/ChapXX_ExerciseYY_*.md`，再把链接加入这里。
