@@ -371,6 +371,8 @@ E_{\rm equatorial}
 
 方向：**与 $\vec p$ 反向。**
 
+**对应练习**：[Chap01 Ex03 电偶极子之间的力](../Unresolved_Problems/Chap01_Exercise03_Dipole_Dipole_Force.md) — **难度 ★★★★★｜未解决，矢量微积分**。
+
 ## 10. 带电粒子在均匀电场中
 
 核心关系：
