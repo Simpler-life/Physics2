@@ -124,6 +124,8 @@ f=\text{constant}
 
 这样的等值面。
 
+**对应练习**：[Chap01 Ex03 偶极力的方向导数](../Unresolved_Problems/Chap01_Exercise03_Dipole_Dipole_Force.md) — **难度 ★★★★★｜未解决，跨章节**。
+
 ## 3. 从 Electric Potential 得到 Electric Field
 
 Lecture 3 已知：
