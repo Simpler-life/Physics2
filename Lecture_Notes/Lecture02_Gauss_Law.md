@@ -107,6 +107,8 @@ Q_{\rm enc}=0
 
 只有在额外对称性足够强，使得 $E$ 可以从积分中提出时，才能进一步得到局部电场。
 
+**对应练习**：[Chap06 Ex07 界面电荷与高斯面](../Mistake/Chap06_Exercise07_Interface_Charge_Gauss_Sign.md) — **难度 ★★★☆☆｜已解决，法向与符号**。
+
 ## 4. 均匀带电 spherical shell
 
 设半径为 $R$ 的球壳，总电荷 $Q$ 均匀分布在球壳表面。
