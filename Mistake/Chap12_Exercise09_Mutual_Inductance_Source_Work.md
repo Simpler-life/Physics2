@@ -6,6 +6,10 @@
 
 ## 1. 题目与当时的疑惑
 
+<img width="1142" height="384" alt="image" src="https://github.com/user-attachments/assets/a1c8ce83-7f12-49be-a29a-fd6246dd69e7" />
+<img width="1108" height="190" alt="image" src="https://github.com/user-attachments/assets/45aead3b-a8c2-402f-b9cd-e1233efec4fe" />
+
+
 两个同轴、等长的长螺线管，内半径 $a$，外半径 $b>a$，长度 $\ell$，匝密度分别为 $n_1,n_2$。理想电流源可缓慢改变其中一个线圈电流，同时保持另一个电流不变。比较不同通电顺序下电流源做功，并与磁场能量核对。
 
 当时卡住的地方：
