@@ -6,6 +6,9 @@
 
 ## 1. 题目与困惑
 
+<img width="1430" height="692" alt="image" src="https://github.com/user-attachments/assets/7621fe46-98b8-4a1e-830e-077eb999ba86" />
+
+
 **Chapter 12, Exercise 7**：长同轴电缆内导体为半径 $a$ 的实心圆柱，均匀承载沿 $+z$ 方向的总电流 $I$；半径 $b>a$ 的薄外导体承载反向电流 $-I$。两导体均非磁性，考虑长度 $\ell$，忽略端部效应。
 
 本次容易混淆的地方：
