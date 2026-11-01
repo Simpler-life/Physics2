@@ -118,6 +118,8 @@ C\simeq\kappa\varepsilon_0\frac A d
 
 **小例子 / 易错提醒**：分清『接电源 V 固定』和『断开电源 Q 固定』；前者插介质后 Q 增加，后者 V 降低。
 
+**对应练习**：[Chap07 Ex09 固定 Q / 固定 V 与电池做功](../Unresolved_Problems/Chap07_Exercise09_Movable_Capacitor_Energy_Force.md) — **难度 ★★★★☆｜待进一步理解；关联电容基础**。
+
 ## 6. 公式忘了怎么办：识题步骤
 
 1. **先画图、标出已知量**，并给方向和正负号一个明确约定。
