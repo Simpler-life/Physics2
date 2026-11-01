@@ -301,112 +301,163 @@ V_m^2=(I_mR)^2+[I_m(X_L-X_C)]^2
 
 如果之后学复数，串联电路可写成复阻抗 $\underline Z=R+\mathrm j(X_L-X_C)$；这里的 $Z=|\underline Z|$ 只表示其**大小**，而复数还保存了相位信息。不会复数暂时完全不影响用直角三角形解题。
 
-### 5.4 从阻抗大小到复阻抗：为什么出现 $j$？
+### 5.4 从平方根公式走向复阻抗：不是新公式，而是把“直角三角形”写完整
 
-前面只讨论了**串联 RLC 的阻抗大小**，足以求总电流振幅；但遇到 Exercise 2 那种**有并联支路的交流电路**，还必须正确处理各支路的相位，因此需要复阻抗。
-
-#### (1) $j$ 是什么？
-
-电路中 $i$ 已经用于电流，因此用 $j$ 表示数学中的虚数单位（与数学课的 $i$ 相同）：
+前面 5.3 已经得到**串联 RLC 的阻抗大小**：
 
 ```math
-j^2=-1,\qquad \frac1j=\frac{j}{j^2}=-j
+Z=\sqrt{R^2+(X_L-X_C)^2}
 ```
 
-它不是额外的物理元件，也不是电流大小。复数的实部和虚部分别编码相差 $90^\circ$ 的两个正交相位分量。**乘以 $j$，相位增加 $90^\circ$；乘以 $-j$，相位减少 $90^\circ$。**
+这里的平方根来自勾股定理：$R$ 是与电流同相的方向，$X_L-X_C$ 是与电流相差 $90^\circ$ 的方向，而 $Z$ 是这两个分量合成后的**长度**。
 
-#### (2) 三种理想元件的复阻抗：做题速查
+**问题来了：如果不只想知道长度，还想保存两个分量及其相位方向，该怎么办？**
 
-在**线性电路的正弦稳态**中，以相同频率 $\omega=2\pi f$ 表示所有电压、电流的相量，定义
+#### 第一步：用复数记录直角三角形的两条边
+
+数学中的复数 $a+jb$ 可以表示平面上的点 $(a,b)$：实部 $a$ 是横坐标，虚部 $b$ 是纵坐标。$j$ 就是虚数单位（数学课常写 $i$，这里为避免与电流 $i$ 混淆而写 $j$）：
 
 ```math
-\underline Z=\frac{\underline V}{\underline I}
+j^2=-1
 ```
 
-这里下划线表示**复数相量**，而 $|\underline Z|$ 表示阻抗的大小（电压振幅与电流振幅之比）。电阻、理想电感、理想电容分别有：
-
-| 元件 | 复阻抗 $\underline Z$ | 大小 $|\underline Z|$ | 元件电压相对于电流 |
-| --- | --- | --- | --- |
-| 电阻 $R$ | $R$ | $R$ | 同相 |
-| 电感 $L$ | $j\omega L$ | $\omega L$ | 超前 $90^\circ$ |
-| 电容 $C$ | $\dfrac1{j\omega C}=-\dfrac{j}{\omega C}$ | $\dfrac1{\omega C}$ | 落后 $90^\circ$ |
-
-**一眼看懂符号**：电阻贡献实数部分，电感贡献正虚部，电容贡献负虚部。这些不是说电压、电流“变成了虚数”，而是方便保留正弦量的相位信息。
-
-为什么会这样？例如给电感一个相量电流，其实际电流可写为 $i(t)=I_m\cos(\omega t)$。根据 $v_L=L\,di/dt$，电压相位比电流超前 $90^\circ$，大小比值为 $\omega L$，于是用 $j\omega L$ 同时记录大小与相位。电容由 $i=C\,dv_C/dt$ 同理得到 $1/(j\omega C)$。
-
-特别注意电容的代数变形：
+复数的**模**就是到原点的距离：
 
 ```math
-\frac{1}{j\omega C}
-=\frac1j\frac1{\omega C}
+|a+jb|=\sqrt{a^2+b^2}
+```
+
+现在把刚才阻抗三角形的两条边放进去：
+
+- 横坐标：$R$，表示同相部分。
+- 纵坐标：$X_L-X_C$，表示超前与落后 $90^\circ$ 的净效果。
+
+就得到**复阻抗**（用 $\underline Z$ 区分于原来的阻抗大小 $Z$）：
+
+```math
+\boxed{\underline Z=R+j(X_L-X_C)}
+```
+
+对它取模：
+
+```math
+|\underline Z|
+=\sqrt{R^2+(X_L-X_C)^2}
+=Z
+```
+
+**这不是从一个公式“变出”一堆公式：原来的 $Z$ 只告诉你斜边多长；复阻抗 $\underline Z$ 还告诉你横、纵分量是多少。** 它的幅角对应电压相对于电流的相位差。
+
+#### 第二步：把 R、L、C 各自放到这两条轴上
+
+回忆第 4 节：
+
+- 电阻：电压与电流同相，沿**实轴**，所以 $\underline Z_R=R$。
+- 电感：电压超前电流 $90^\circ$，沿**正虚轴**，感抗为 $X_L=\omega L$，所以 $\underline Z_L=jX_L=j\omega L$。
+- 电容：电压落后电流 $90^\circ$，沿**负虚轴**，容抗为 $X_C=1/(\omega C)$，所以 $\underline Z_C=-jX_C$。
+
+电容也常写成：
+
+```math
+\underline Z_C
+=\frac{1}{j\omega C}
 =-\frac{j}{\omega C}
 ```
 
-其中最后的负号只来自 $j^2=-1$；不是把 $j$ 随意从分母移到分子。
+这是因为：
 
-#### (3) 复阻抗怎样串联、并联？
+```math
+\frac1j=\frac{j}{j^2}=-j
+```
 
-对**同一频率的正弦稳态**，用复阻抗计算的串并联规则与普通电阻形式相同，但运算对象是**复数**：
+**三种元件的结论（不要把公式放在 Markdown 表格内，避免复杂 LaTeX 渲染混乱）：**
+
+**电阻 $R$** —— 同相：
+
+```math
+\underline Z_R=R,\qquad |\underline Z_R|=R
+```
+
+**电感 $L$** —— 电压超前电流 $90^\circ$：
+
+```math
+\underline Z_L=j\omega L,\qquad |\underline Z_L|=\omega L
+```
+
+**电容 $C$** —— 电压落后电流 $90^\circ$：
+
+```math
+\underline Z_C=\frac1{j\omega C}=-\frac{j}{\omega C},
+\qquad |\underline Z_C|=\frac1{\omega C}
+```
+
+其中 $\omega=2\pi f$。以上都以线性电路的**正弦稳态**为前提。
+
+#### 第三步：为什么串联可以直接“加复数”？
+
+串联时**电流相同**，各元件的电压相量相加，因此：
+
+```math
+\underline Z_{\rm series}
+=\underline Z_R+\underline Z_L+\underline Z_C
+=R+j\omega L-\frac{j}{\omega C}
+```
+
+整理：
+
+```math
+\underline Z_{\rm series}
+=R+j\left(\omega L-\frac1{\omega C}\right)
+=R+j(X_L-X_C)
+```
+
+**取模就回到 5.3 的平方根公式。** 这是同一物理关系的两种写法，区别只在于是否保留相位。
+
+#### 第四步：为什么 Exercise 2 的串并联电路需要复阻抗？
+
+前面那个平方根公式**只适用于串联 RLC**。如果有并联，支路电流不同，相位也不同，不能把各个元件的阻抗大小当普通电阻直接运算。
+
+正弦稳态下用相量形式的欧姆定律：
+
+```math
+\underline V=\underline I\,\underline Z
+```
+
+由串联电压相加、并联电流相加，可得到：
 
 **串联：**
 
 ```math
-\underline Z_{\rm series}=\underline Z_1+\underline Z_2+\cdots
+\underline Z_{\rm eq}=\underline Z_1+\underline Z_2+\cdots
 ```
 
 **并联：**
 
 ```math
-\frac1{\underline Z_{\rm parallel}}
+\frac1{\underline Z_{\rm eq}}
 =\frac1{\underline Z_1}+\frac1{\underline Z_2}+\cdots
 ```
 
-两元件并联时还可写作：
+这里计算的是**复数阻抗**，而不是先取模得到的普通正数。最后需要电压、电流振幅时，才取模。
+
+**以 Chapter 13 Exercise 2 为例**：$3\,\mu\mathrm F$ 电容和 $0.2\,\mathrm H$ 电感串联，再与右侧由 $1\,\mathrm H$ 电感、$100\,\Omega$ 电阻构成的并联部分串联。电源频率 $f=60\,\mathrm{Hz}$，所以：
 
 ```math
-\underline Z_{\rm parallel}
-=\frac{\underline Z_1\underline Z_2}{\underline Z_1+\underline Z_2}
+\omega=2\pi f\simeq377\ \mathrm{rad/s}
 ```
 
-**不要先把每个复阻抗取绝对值再相加或并联**，那样会丢失相位信息。应当先进行复数运算，最后才取 $|\underline Z|$ 求振幅。
-
-串联 RLC 的复阻抗正好是：
+先分别得到：
 
 ```math
-\underline Z
-=R+j\omega L+\frac1{j\omega C}
-=R+j\left(\omega L-\frac1{\omega C}\right)
+\underline Z_C=-j884.2\ \Omega
 ```
 
-所以前面 5.3 的结论实际上就是它的模：
-
 ```math
-|\underline Z|
-=\sqrt{R^2+\left(\omega L-\frac1{\omega C}\right)^2}
-```
-
-由此也看出：**原来的 $Z=\sqrt{R^2+(X_L-X_C)^2}$ 不是另一套规律，而是复阻抗取模后的结果。**
-
-#### (4) Chapter 13 Exercise 2：什么时候必须用复阻抗？
-
-题中 $3\,\mu\mathrm F$ 电容与 $0.2\,\mathrm H$ 电感串联，后面连接 $1\,\mathrm H$ 电感和 $100\,\Omega$ 电阻的并联支路，电源频率为 $60\,\mathrm{Hz}$。
-
-先计算：
-
-```math
-\omega=2\pi(60)\simeq377\ \mathrm{rad/s}
-```
-
-三种元件的复阻抗：
-
-```math
-\underline Z_C=-j884.2\ \Omega,\qquad
 \underline Z_{L1}=j75.4\ \Omega,\qquad
 \underline Z_{L2}=j377.0\ \Omega
 ```
 
-对右侧并联支路：
+右侧电阻和电感**并联**：
 
 ```math
 \underline Z_p
@@ -414,7 +465,7 @@ j^2=-1,\qquad \frac1j=\frac{j}{j^2}=-j
 \simeq93.43+j24.78\ \Omega
 ```
 
-再与左侧元件串联：
+最后把并联部分与左侧元件**串联**：
 
 ```math
 \underline Z_{\rm total}
@@ -422,9 +473,11 @@ j^2=-1,\qquad \frac1j=\frac{j}{j^2}=-j
 \simeq93.43-j784.0\ \Omega
 ```
 
-如果 $150\,\mathrm V$ 是**电压振幅**，则总电流振幅是 $150/|\underline Z_{\rm total}|$；但题目问的是 **$100\,\Omega$ 电阻的支路电流振幅**，还要先求并联两端的电压振幅，再除以 $100\,\Omega$。
+需要总电流振幅，就用电源电压振幅除以 $|\underline Z_{\rm total}|$；但题目问 **$100\,\Omega$ 支路的电流振幅**，还要先算并联部分两端电压振幅，再除以 $100\,\Omega$。
 
-**判断口诀：** 看到简单串联 RLC，可以用前面的平方根公式；看到串并联混合，先用复阻抗化简电路，最后再取模求振幅。相量和阻抗只适用于这里的线性正弦稳态分析，不能直接代替开关瞬间的暂态微分方程。
+**最后只记住一条逻辑：**
+
+> 旧公式 $Z=\sqrt{R^2+(X_L-X_C)^2}$ 是串联阻抗的**大小**；新记号 $\underline Z=R+j(X_L-X_C)$ 是保存了相位的**完整复阻抗**。简单串联可直接求模，串并联混合必须先做复数运算再取模。
 
 ---
 
