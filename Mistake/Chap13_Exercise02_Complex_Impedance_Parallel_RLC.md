@@ -5,6 +5,9 @@
 
 ## 1. 题目与当时的困惑
 
+<img width="1420" height="696" alt="image" src="https://github.com/user-attachments/assets/ad6a3b9f-9db3-41d0-9054-55ee9f6165df" />
+
+
 电源电压振幅 $150\,\mathrm V$、频率 $60\,\mathrm{Hz}$；$3\,\mu\mathrm F$ 电容和 $0.2\,\mathrm H$ 电感串联，后接 $1\,\mathrm H$ 电感与 $100\,\Omega$ 电阻的并联支路。求**通过 $100\,\Omega$ 电阻的电流振幅**。
 
 - 不熟悉 $Z_L=j\omega L$、$Z_C=1/(j\omega C)$，不知道 $j$ 是什么。
