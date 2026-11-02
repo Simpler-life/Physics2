@@ -481,6 +481,8 @@ j^2=-1
 
 ---
 
+**相关错题复盘**：[Chapter 13 Exercise 2：复阻抗与串并联 RLC 电路](../Mistake/Chap13_Exercise02_Complex_Impedance_Parallel_RLC.md)（公式速记、$j$ 的含义、并联支路电流、最后取模）。
+
 ### 5.5 用一个数字例子核对理解
 
 假设某个频率下：
