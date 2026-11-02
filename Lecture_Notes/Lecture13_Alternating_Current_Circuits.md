@@ -131,6 +131,10 @@ i(t)=-\omega_0Q_m\sin(\omega_0t+\phi_0)
 
 ---
 
+**待复习错题（未掌握）**：[Chapter 13 Exercise 5：开关切换后的 LC 振荡与初始条件](../Mistake/Chap13_Exercise05_LC_Oscillation_Initial_Conditions_Unresolved.md)。**目前只是机械抄写了答案，尚不能独立完成**；重点复习 $i_L=-dq/dt$ 的方向约定、初始条件、振荡解及能量转换。
+
+---
+
 ## 2. 第二步：接入一个电阻，为什么振荡会越来越弱？
 
 现在把电阻 $R$ 接入 LC 回路，成为**串联 RLC 自由振荡电路**，仍然不接外部交流电源。
