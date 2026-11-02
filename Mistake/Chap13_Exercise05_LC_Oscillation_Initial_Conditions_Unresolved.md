@@ -8,6 +8,9 @@
 
 ## 1. 题型与真正没掌握的地方
 
+<img width="1422" height="700" alt="image" src="https://github.com/user-attachments/assets/99dc6d91-3cd1-41b0-af57-d19ddcba66a6" />
+
+
 电池电动势 $\mathcal E$、电阻 $r$、电感 $L$、电容 $C$。开关先闭合很久，$t=0$ 断开，之后理想 LC 振荡。取电感电流 $i_L$ 从 A 到 B 为正，$q$ 为电容连接 A 一侧极板的带符号电荷。
 
 **当前实际学习状态：整道题只是机械地抄了答案，并不意味着学会。**
