@@ -169,6 +169,10 @@ L\frac{d^2q}{dt^2}+R\frac{dq}{dt}+\frac qC=0
 
 ---
 
+**未理解错题（待复习）**：[Chapter 13 Exercise 4：耦合 RLC、解耦与阻尼振子](../Mistake/Chap13_Exercise04_Coupled_Damped_Oscillators_Unresolved.md)。目前只能照步骤把耦合方程相加、相减；尚未真正理解耦合、解耦、阻尼振子及有效电感的物理意义。**状态：未理解，不计入已掌握。**
+
+---
+
 ## 3. 第三步：一直损失能量，如何让电路持续振荡？
 
 答案是：**接入交流电源，让电源持续提供能量。**
