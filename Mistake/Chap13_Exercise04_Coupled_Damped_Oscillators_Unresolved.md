@@ -6,6 +6,12 @@
 
 ## 1. 题目与困惑
 
+
+<img width="1404" height="418" alt="image" src="https://github.com/user-attachments/assets/08215ff0-b3ad-4f35-895b-fa7876b138d6" />
+
+<img width="1380" height="318" alt="image" src="https://github.com/user-attachments/assets/b5c01794-bc92-4e67-a4ca-c3da1ed89de6" />
+
+
 两个相同的 RLC 回路由互感 $M$ 耦合，每个回路的自感、电阻、电容为 $L,R,C$。讨论耦合微分方程、通过 $q_+=q_1+q_2$、$q_-=q_1-q_2$ 解耦，以及无阻尼情况下的频率。
 
 目前的真实疑问：
