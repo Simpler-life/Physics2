@@ -2,6 +2,9 @@
 
 > 这一页记录在普通物理中已经实际用到的散度定理，以及它如何把“整体的通量”转换成“局部的散度”。
 
+<img width="1180" height="1224" alt="image" src="https://github.com/user-attachments/assets/33fffbb0-bc41-4380-abd0-4d3d5d2c349c" />
+
+
 ## 1. 核心公式
 
 散度定理（Divergence Theorem / Gauss's Theorem）：
