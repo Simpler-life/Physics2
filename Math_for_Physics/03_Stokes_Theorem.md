@@ -2,6 +2,9 @@
 
 > 本页记录在普通物理 II 的 Maxwell 方程中遇到的 Stokes 定理，以及它与高斯散度定理的区别。这里是当前接触过的核心公式和一个应用，不代表已经系统掌握全部证明。
 
+<img width="1118" height="1224" alt="image" src="https://github.com/user-attachments/assets/74bc2db8-3605-4d23-8440-cd70e293b172" />
+
+
 ## 1. 核心公式
 
 ```math
