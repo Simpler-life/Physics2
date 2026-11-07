@@ -1,126 +1,246 @@
-# First-Order Linear ODE：RC 电路中的标准形式
+# First-Order Linear ODE：一阶微分方程与 RC / RL 暂态
 
-> 状态：🟡 已遇到并会识别，但尚未系统掌握  
-> 来源：Chapter 7 RC circuit  
-> 当前目标：先能识别标准形式并用于作业；“为什么解一定含指数函数”与完整求解方法留待后续补齐。
+> 状态：🟡 已开始学习分离变量法及其数学依据；尚未通过独立练习确认熟练掌握。  
+> 来源：Chapter 7 RC circuit、RL 暂态讨论。  
+> 目标：能从电路方程出发，亲手推出指数衰减、指数增长，并用初始条件确定常数。
 
-## 1. 当前遇到的标准形式
+## 1. 什么是一阶微分方程？
 
-在 RC 电路中，整理 Kirchhoff 方程后出现：
+普通方程求一个数；微分方程求随时间变化的函数，例如电荷 $Q(t)$ 或电流 $I(t)$。
 
-```math
-\frac{dQ}{dt}
-+
-\frac{1}{\tau}Q
-=
-\text{constant}
-```
-
-它属于一阶线性常微分方程（first-order linear ODE）。
-
-更一般地可以写成：
+最常见的常系数形式是：
 
 ```math
-y'(t)+ay=b
+\frac{dy}{dt}+ay=b
 ```
 
-其中 $a,b$ 为常数。
+其中 $a,b$ 为常数，$y=y(t)$。在 RC、RL 暂态中通常 $a>0$。
 
-## 2. 为什么引入 $\tau$
+## 2. 为什么 $dQ/dt$ 好像能够像分数一样移项？
 
-当方程中 $Q$ 前面的系数为某个常数 $a$ 时，可以定义：
+例如：
 
 ```math
-\frac{1}{\tau}=a
+\frac{dQ}{dt}=-3Q
 ```
 
-于是：
+分离变量法常写成：
 
 ```math
-\tau=\frac{1}{a}
+\frac{1}{Q}\,dQ=-3\,dt
 ```
 
-在 RC 电路中，$\tau$ 称为 time constant（时间常数），通常具有：
+**注意：导数不是普通分数，不能对任何微分方程都这样随意拆开。** 此处操作之所以正确，是因为链式法则和换元积分。
+
+严格解释（先假设 $Q(t)\neq0$）：
 
 ```math
-\tau=R_{\rm effective}C
+\frac{1}{Q(t)}\frac{dQ}{dt}=-3
 ```
 
-的结构。
-
-因此 $\tau$ 不是突然出现的新物理量，而是把微分方程写成容易识别的标准形式后定义出来的。
-
-## 3. 当前会使用的解形式
-
-对于：
+因为：
 
 ```math
-\frac{dQ}{dt}
-+
-\frac{1}{\tau}Q
-=
-\frac{Q_\infty}{\tau}
+\frac{d}{dt}\ln|Q(t)|
+=\frac{1}{Q(t)}\frac{dQ}{dt}
 ```
 
-若初始值为 $Q(0)$，解可以写成：
+所以对时间积分：
 
 ```math
-Q(t)
-=
-Q_\infty
-+
-\bigl(Q(0)-Q_\infty\bigr)e^{-t/\tau}
+\ln|Q(t)|=-3t+C
 ```
 
-若电容初始未充电：
+再取指数，并把常数及符号合并：
 
 ```math
-Q(0)=0
+Q(t)=Ae^{-3t}
 ```
 
-则：
+若已知 $Q(0)=Q_0$，则 $A=Q_0$，所以：
+
+```math
+\boxed{Q(t)=Q_0e^{-3t}}
+```
+
+**不要漏掉零解：** 分离变量时除以 $Q$，暂时排除了 $Q=0$；原方程还有 $Q(t)\equiv0$ 这个解。将 $A=0$ 纳入最终表达式即可。
+
+### 分离变量法适用的常见结构
+
+如果方程能够写成：
+
+```math
+\frac{dy}{dt}=f(y)g(t)
+```
+
+那么在 $f(y)\neq0$ 的区间可以写成：
+
+```math
+\frac{dy}{f(y)}=g(t)\,dt
+```
+
+然后对两边积分；还需检查被除掉的 $f(y)=0$ 对应的常数解。
+
+## 3. 例一：RL 电流自然衰减
+
+理想电感 $L$ 和电阻 $R$ 构成无电源的闭合放电回路，且 $R,L$ 都为正的常数。
+
+Kirchhoff 电压定律：
+
+```math
+L\frac{dI}{dt}+RI=0
+```
+
+移项：
+
+```math
+\frac{dI}{dt}=-\frac{R}{L}I
+```
+
+分离变量（先在 $I\neq0$ 的区间）：
+
+```math
+\frac{dI}{I}=-\frac{R}{L}\,dt
+```
+
+两边积分：
+
+```math
+\ln|I|=-\frac{R}{L}t+C
+```
+
+取指数，并使用初始条件 $I(0)=I_0$：
+
+```math
+\boxed{I(t)=I_0e^{-Rt/L}}
+```
+
+其中时间常数：
+
+```math
+\boxed{\tau_L=\frac{L}{R}}
+```
+
+于是 $I(t)=I_0e^{-t/\tau_L}$。**时间常数是 $L/R$，不是 $LR$。**
+
+## 4. 例二：RL 接通恒定电源后的电流增长
+
+串联电池电动势 $\mathcal E$、电阻 $R$、电感 $L$，电池电压恒定：
+
+```math
+\mathcal E=RI+L\frac{dI}{dt}
+```
+
+整理后：
+
+```math
+\frac{dI}{dt}=\frac{\mathcal E-RI}{L}
+```
+
+分离变量：
+
+```math
+\frac{dI}{\mathcal E-RI}=\frac{dt}{L}
+```
+
+积分时左侧用换元 $u=\mathcal E-RI$，因此 $du=-R\,dI$：
+
+```math
+-\frac{1}{R}\ln|\mathcal E-RI|
+=\frac{t}{L}+C
+```
+
+整理得到：
+
+```math
+I(t)=\frac{\mathcal E}{R}+Ae^{-Rt/L}
+```
+
+若刚闭合开关时 $I(0)=0$，则：
+
+```math
+0=\frac{\mathcal E}{R}+A
+\quad\Longrightarrow\quad
+A=-\frac{\mathcal E}{R}
+```
+
+所以：
+
+```math
+\boxed{I(t)=\frac{\mathcal E}{R}\left(1-e^{-Rt/L}\right)}
+```
+
+验证：$t=0$ 时 $I=0$；$t\to\infty$ 时 $I\to\mathcal E/R$，符合物理直觉。
+
+特殊情况：若某一步除以 $\mathcal E-RI$，也应检查稳态常数解 $I(t)=\mathcal E/R$；它包含在最终解的 $A=0$ 情况中。
+
+## 5. 考试可复用的通用模板
+
+对于常数 $a>0$、$b$：
+
+```math
+\frac{dy}{dt}+ay=b
+```
+
+先求稳态（令 $dy/dt=0$）：
+
+```math
+y_\infty=\frac{b}{a}
+```
+
+再令 $z=y-y_\infty$。因为 $y_\infty$ 是常数：
+
+```math
+\frac{dz}{dt}
+=\frac{dy}{dt}
+=-a(y-y_\infty)
+=-az
+```
+
+于是回到刚学过的纯衰减方程：
+
+```math
+z(t)=z(0)e^{-at}
+```
+
+代回 $z=y-y_\infty$，得到：
 
 ```math
 \boxed{
-Q(t)
-=
-Q_\infty
-\left(
-1-e^{-t/\tau}
-\right)
+y(t)=y_\infty+[y(0)-y_\infty]e^{-at}
 }
 ```
 
-## 4. 当前的物理识别方式
-
-看到：
+定义时间常数 $\tau=1/a$：
 
 ```math
-\frac{dQ}{dt}
-+
-\frac{1}{\tau}Q
-=
-\frac{Q_\infty}{\tau}
+\boxed{
+y(t)=y_\infty+[y(0)-y_\infty]e^{-t/\tau}
+}
 ```
 
-可以先理解为：
+**考试做题顺序：**
 
-> “变化率 + 当前状态 = 常数驱动”。
+1. 先依据 Kirchhoff 定律或其他物理规律列出微分方程；
+2. 确认方程能否写成 $y'+ay=b$，且系数是常数；
+3. 求初值 $y(0)$、稳态值 $y_\infty$、时间常数 $\tau=1/a$；
+4. 用模板写出解；不放心时按“分离变量 → 积分 → 初始条件”完整推导；
+5. 检查 $t=0$ 与 $t\to\infty$ 两个极限。
 
-在 RC charging 中：
+常见例子：RC 电荷衰减中 $\tau_{RC}=RC$；RL 电流衰减中 $\tau_{RL}=L/R$。**复杂 RLC 二阶电路不一定适用这条一阶指数模板。**
 
-- $Q_\infty$ 是长时间后的最终电荷；
-- $\tau$ 控制靠近最终状态的快慢；
-- $e^{-t/\tau}$ 描述随时间衰减的“还没达到最终状态的部分”。
+## 6. 自测（尚待独立完成）
 
-## 5. 尚未解决
+给定：
 
-目前只是会识别和套用，还没有系统掌握以下内容：
+```math
+\frac{dQ}{dt}=-3Q,\qquad Q(0)=5
+```
 
-- 为什么这种方程的解一定出现 $e^{-t/\tau}$；
-- 如何从微分方程本身推导通解；
-- integrating factor（积分因子）方法；
-- 齐次解 + 特解的结构；
-- 初始条件如何严格决定积分常数。
+不看前文，尝试依次写出：
 
-这些内容保留在 [Pending/Knowledge_TODO.md](../Pending/Knowledge_TODO.md) 中，后续需要时再系统学习。
+- 分离变量后的式子；
+- 两边积分后的式子；
+- 满足初始条件的 $Q(t)$。
+
+**当前掌握状态：** 已理解“为什么能分离变量”的链式法则依据，并看过衰减与增长方程的完整解法；还没有独立完成自测，因此暂不标记为 ✅。
