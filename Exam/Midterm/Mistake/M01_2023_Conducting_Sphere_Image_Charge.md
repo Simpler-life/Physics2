@@ -8,6 +8,9 @@
 
 ## 一、题目模型与符号
 
+<img width="860" height="1108" alt="870c7c218e465e1b3bcea8eec89e2d4c" src="https://github.com/user-attachments/assets/4bfceb4a-35a2-4746-ad65-9c46bbb5eb2e" />
+
+
 - 半径 $R$ 的球形导体，初始净电荷 $Q$；无穷远电势为零。
 - (a) 单独存在时求球内外电场与电势。
 - (b) 球外距离球心 $d>R$ 处放真实点电荷 $+q$，导体保持孤立，求球心电场与电势。
@@ -16,6 +19,10 @@
 - 用 $k=1/(4\pi\varepsilon_0)$；球心到观察点的距离记为 $\rho=OP$，避免与球半径 $R$ 混淆；角 $\theta$ 是 $\overrightarrow{OP}$ 与指向真实电荷方向的夹角。
 
 ## 二、最初的错误与订正
+
+<img width="818" height="1180" alt="image" src="https://github.com/user-attachments/assets/c0d099d3-a01a-423e-aea4-51720af736c0" />
+<img width="926" height="1028" alt="image" src="https://github.com/user-attachments/assets/793f25e5-b169-40d6-9576-f5d10876831a" />
+
 
 ### 错误 1：电势积分漏负号
 
