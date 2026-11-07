@@ -9,3 +9,4 @@
 
 ## 当前条目
 - [M00：定积分计算与符号](M00_Definite_Integral_Check.md)
+- [M01：2023 期中第 1 题——导体球、电势符号与镜像法](M01_2023_Conducting_Sphere_Image_Charge.md)（(d) 独立正确；(a)–(c) 待独立复做）
