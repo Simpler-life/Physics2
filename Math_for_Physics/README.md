@@ -109,9 +109,9 @@
   - $\oint_C\vec B\cdot d\vec l=\iint_S(\nabla\times\vec B)\cdot d\vec A$（$C=\partial S$）
   - 已接触核心公式及其 Maxwell 方程应用；证明尚未系统学习
 
-### Lecture 7 新增数学工具
+### Lecture 7 / RL 暂态新增数学工具
 
-- 🟡 **[First-Order Linear ODE：RC 电路中的标准形式](02_First_Order_Linear_ODE_RC.md)**
-  - 已会识别 $\frac{dQ}{dt}+\frac{1}{\tau}Q=\frac{Q_\infty}{\tau}$
-  - 已会使用 $Q(t)=Q_\infty+(Q(0)-Q_\infty)e^{-t/\tau}$
-  - 尚未系统掌握完整推导、积分因子、齐次解与特解
+- 🟡 **[First-Order Linear ODE：分离变量法、一阶衰减与 RC / RL 暂态](02_First_Order_Linear_ODE_RC.md)**
+  - 已记录 $dQ/dt$ 能分离变量的严格依据（链式法则），以及衰减、RL 通电增长的完整推导
+  - 已记录 $y'+ay=b$ 的稳态平移法、初始条件、时间常数和考试模板
+  - 仍待独立自测验证熟练程度；积分因子法不作为当前冲刺重点
