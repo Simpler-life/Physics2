@@ -101,6 +101,14 @@
   - $\nabla^2=\nabla\cdot\nabla$
   - 已用于 Poisson / Laplace equation
 
+### Maxwell 方程中遇到的积分定理
+
+- ✅ **[Gauss / Divergence Theorem（高斯散度定理）](01_Divergence_Theorem.md)**
+  - $\oint_S\vec B\cdot d\vec A=\iiint_V(\nabla\cdot\vec B)\,dV$（$S=\partial V$）
+- 🟡 **[Stokes' Theorem（斯托克斯定理）](03_Stokes_Theorem.md)**
+  - $\oint_C\vec B\cdot d\vec l=\iint_S(\nabla\times\vec B)\cdot d\vec A$（$C=\partial S$）
+  - 已接触核心公式及其 Maxwell 方程应用；证明尚未系统学习
+
 ### Lecture 7 新增数学工具
 
 - 🟡 **[First-Order Linear ODE：RC 电路中的标准形式](02_First_Order_Linear_ODE_RC.md)**
