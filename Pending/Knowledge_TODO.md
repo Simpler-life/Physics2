@@ -61,15 +61,15 @@ Lecture 4 主线已完成到作业可用水平。
 - [x] 静电场的 curl 为 0
 - [x] Triangle of Electrostatics
 
-## Lecture 7
+## Lecture 7 / 一阶微分方程
 
-已遇到但尚未系统掌握：
+已学习并记录推导，仍需独立练习确认：
 
-- [ ] 一阶线性常微分方程 $y'+ay=b$ 的完整求解
-- [ ] 为什么 RC 方程的解必然出现指数项 $e^{-t/\tau}$
-- [ ] integrating factor（积分因子）方法
-- [ ] 齐次解 + 特解的结构
-- [ ] 初始条件如何决定积分常数
+- [ ] 一阶线性常微分方程 $y'+ay=b$ 的独立求解（已看过分离变量法与稳态平移法）
+- [ ] 为什么 RC / RL 方程出现指数项 $e^{-t/\tau}$（已理解推导，待独立复现）
+- [ ] 用初始条件独立确定积分常数（已看过示例，待自测）
+- [ ] integrating factor（积分因子）方法（当前期中冲刺暂不优先）
+- [ ] 齐次解 + 特解的一般方法（已接触稳态解加衰减项，未系统学习）
 
-当前已会识别并套用 RC 标准形式，详细记录见：
-[First-Order Linear ODE：RC 电路中的标准形式](../Math_for_Physics/02_First_Order_Linear_ODE_RC.md)
+详细推导与自测题见：
+[First-Order Linear ODE：分离变量法、一阶衰减与 RC / RL 暂态](../Math_for_Physics/02_First_Order_Linear_ODE_RC.md)
