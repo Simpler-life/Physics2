@@ -16,6 +16,8 @@
 - [Lecture 3：Electrostatic Potential](Lecture_Notes/Lecture03_Electrostatic_Potential.md)
 - [Lecture 4：Triangle of Electrostatics](Lecture_Notes/Lecture04_Triangle_of_Electrostatics.md)
 - [Lecture 5：Conductors in Electrostatic Field](Lecture_Notes/Lecture05_Conductors_in_Electrostatic_Field.md)
+- [Lecture 14：Maxwell's Equations and EM Waves（期中速记）](Lecture_Notes/Lecture14_Maxwells_Equations_and_EM_Waves.md)
+- [完整 Lecture 01–14 导航](Lecture_Notes/README.md)
 
 ### `Math_for_Physics/`
 物理中遇到的**大学新数学工具**。
