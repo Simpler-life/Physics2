@@ -27,14 +27,14 @@
 E_\phi 2\pi s=-\pi s^2\frac{dB}{dt}
 \qquad\Rightarrow\qquad
 E_\phi=-\frac{s}{2}\frac{dB}{dt}
-~~~
+```
 
 球面半径 $R$，极角 $\theta$ 处 $s=R\sin\theta$，一个电荷元 $dq$ 的轴向力矩：
 
 ```math
 d\tau_z=s E_\phi\,dq
 =-\frac{R^2\sin^2\theta}{2}\frac{dB}{dt}\,dq
-~~~
+```
 
 对均匀带电球面有：
 
@@ -42,13 +42,13 @@ d\tau_z=s E_\phi\,dq
 \int\sin^2\theta\,dq=\frac{2Q}{3}
 \qquad\Rightarrow\qquad
 \tau_z=-\frac{QR^2}{3}\frac{dB}{dt}
-~~~
+```
 
 两球壳分别取 $(Q,R)=(+q,r_1)$、$(-q,r_2)$：
 
 ```math
 \tau_z=\frac{q(r_2^2-r_1^2)}{3}\frac{dB}{dt}
-~~~
+```
 
 用 $J\,d\Omega/dt=\tau_z$，从初始静止、$B=B_0$ 积分至 $B=0$：
 
@@ -56,7 +56,7 @@ d\tau_z=s E_\phi\,dq
 \boxed{
 \vec\Omega_f=-\frac{q B_0(r_2^2-r_1^2)}{3J}\hat z
 }
-~~~
+```
 
 当 $q>0,B_0>0$ 时，从 $+z$ 端观察为顺时针方向。上述结果依赖题目中的均匀磁场及缓慢变化等假设。
 
