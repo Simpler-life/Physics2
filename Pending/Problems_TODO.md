@@ -11,6 +11,9 @@
 - [ ] [Chap07 Exercise 9 — Movable Parallel-Plate Capacitor](../Unresolved_Problems/Chap07_Exercise09_Movable_Capacitor_Energy_Force.md)
   - 当前卡点：固定 $Q$ 与固定 $V$ 时能量法的差别；为什么固定 $V$ 时不能直接用 $F=-dU/dd$；如何把电池做功纳入能量守恒。
 
+- [ ] [Chap14 Exercise 3(b) — 坡印廷定理与柱坐标散度](../Unresolved_Problems/Chap14_Exercise03_Poynting_Theorem_Divergence.md)
+  - 当前状态：作业答案已抄，尚未独立理解；卡点是柱坐标散度公式及负散度的能量意义。
+
 ## 维护规则
 
 - 新题：**先创建** `Unresolved_Problems/ChapXX_ExerciseYY_*.md`，再把链接加入这里。
