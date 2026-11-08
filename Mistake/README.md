@@ -18,3 +18,7 @@
 ```text
 ChapXX_ExerciseYY_Short_Title.md
 ```
+
+## 已记录错题
+
+- [Chapter 14 Exercise 1：位移电流的积分面积误判](Chap14_Exercise01_Displacement_Current_Area.md) — 错误已定位，待独立复做。
