@@ -6,6 +6,9 @@
 
 ## 1. 题目条件（辅导时的整理）
 
+<img width="1404" height="332" alt="image" src="https://github.com/user-attachments/assets/6bceb08e-2a7f-4061-ba55-92d9a05d95de" />
+
+
 两个同心绝缘球壳，半径 $r_1<r_2$，分别均匀带电 $+q$ 与 $-q$，刚性连接，可绕 $z$ 轴转动，总转动惯量 $J$。初始存在沿 $+z$ 方向的均匀磁场 $B_0$，之后缓慢降为零。求最终角速度与转动方向。
 
 ## 2. 当前确切状态和卡点
