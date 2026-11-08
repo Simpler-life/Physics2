@@ -12,20 +12,20 @@
 \vec j=\frac{I}{\pi a^2}\hat z,\qquad
 \vec E=\frac{\rho_e I}{\pi a^2}\hat z,\qquad
 \vec B=\frac{\mu_0 I r}{2\pi a^2}\hat\phi
-~~~
+```
 
 由 $\hat z\times\hat\phi=-\hat r$ 可得：
 
 ```math
 \vec S=\frac{1}{\mu_0}\vec E\times\vec B
 =-\frac{\rho_e I^2 r}{2\pi^2 a^4}\hat r
-~~~
+```
 
 第 (b) 问要求验证：
 
 ```math
 \nabla\cdot\vec S=-\rho_e j^2=-\vec j\cdot\vec E
-~~~
+```
 
 ## 2. 当前卡点
 
@@ -46,7 +46,7 @@
 =\frac1r\frac{\partial(rA_r)}{\partial r}
 +\frac1r\frac{\partial A_\phi}{\partial\phi}
 +\frac{\partial A_z}{\partial z}
-~~~
+```
 
 本题 $\vec S=S_r(r)\hat r$，所以：
 
@@ -56,7 +56,7 @@
 =\frac1r\frac{\partial}{\partial r}
 \left(-\frac{\rho_e I^2r^2}{2\pi^2a^4}\right)
 =-\frac{\rho_e I^2}{\pi^2a^4}
-~~~
+```
 
 由于 $j=I/(\pi a^2)$ 且 $\vec E=\rho_e\vec j$：
 
@@ -66,7 +66,7 @@
 =-\rho_e j^2
 =-\vec j\cdot\vec E
 }
-~~~
+```
 
 物理意义：稳态时局部场能不变；进入导线的电磁能量转化为电流耗散的焦耳热。
 
