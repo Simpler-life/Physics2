@@ -57,6 +57,7 @@
 
 当前：
 - [Chapter 5 Exercise 3：Image Charge Mistakes](Mistake/Chap05_Exercise03_Image_Charge_Mistakes.md)
+- [Chapter 14 Exercise 1：位移电流包围面积误判](Mistake/Chap14_Exercise01_Displacement_Current_Area.md)
 
 ### `Pending/`
 **学习暂存区 / 索引区**，不作为详细知识或题目的主内容存储位置。
