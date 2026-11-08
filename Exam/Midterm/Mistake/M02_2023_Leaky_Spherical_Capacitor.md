@@ -8,6 +8,9 @@
 
 ## 一、题目模型与当前反馈
 
+<img width="862" height="750" alt="a9c6b61151517e13538736e365a597d8" src="https://github.com/user-attachments/assets/dfab671f-6489-41ea-8091-5dd5d1d42648" />
+
+
 两个同心球形电极，半径 $a<b$。两电极间填充均匀介质，电导率为 $\sigma$、相对介电常数为 $\varepsilon_r$。初始电荷为 $Q_0$，电荷通过介质逐渐泄漏。
 
 - (a) 求球形电容器的电容 $C$ 和径向漏电电阻 $R$。
@@ -17,6 +20,11 @@
 这里的 $R$ 指电阻，不是球半径；积分时径向坐标统一使用 $r$。
 
 ## 二、第一轮做对的地方
+
+<img width="974" height="1388" alt="image" src="https://github.com/user-attachments/assets/329907ff-b279-4caf-b4ec-bb55c1fe8d95" />
+<img width="950" height="1224" alt="image" src="https://github.com/user-attachments/assets/413d2401-34f3-4785-8aa6-5ac298d8d93a" />
+
+
 
 1. 知道使用高斯定律从球对称电场出发，积分电势差，再根据 $C=Q/U$ 求电容。
 2. 知道径向漏电可把介质分为薄球壳，写出 $dR=dr/(\sigma A(r))$ 再积分。
