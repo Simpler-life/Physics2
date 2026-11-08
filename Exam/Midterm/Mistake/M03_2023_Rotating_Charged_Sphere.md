@@ -8,6 +8,10 @@
 
 ## 1. 模型与三个几何量
 
+
+<img width="878" height="1128" alt="df4ff2ce3b0ebf00d2ab3ef807d2dba8" src="https://github.com/user-attachments/assets/989fbaea-a318-4c80-8c96-48d0ffad6588" />
+
+
 半径 $R$ 的薄球壳，表面均匀带总电荷 $Q$，以角速度 $\omega$ 绕穿过球心的轴匀速转动。设极角 $\theta$ 从旋转轴正方向量起，**北极到南极是 $0\le\theta\le\pi$**。
 
 纬度圆环的半径：
@@ -43,6 +47,12 @@ d\ell=R\,d\theta
 - 求 **球心磁场**：把每条纬度环当作**位于球心轴线上**的圆形电流环。
 
 ## 2. (a) 正确的 $\sigma(\theta)$ 与 $J(\theta)$
+
+
+<img width="966" height="1288" alt="image" src="https://github.com/user-attachments/assets/cf0b9760-73b7-4964-9983-93dca2e72de6" />
+
+<img width="928" height="1066" alt="image" src="https://github.com/user-attachments/assets/2a3a809d-371e-45d6-8fc1-085d061e76d0" />
+
 
 为避免符号相撞，把通常的面电荷密度记作 $\sigma_s$：
 
