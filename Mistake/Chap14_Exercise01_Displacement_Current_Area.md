@@ -69,11 +69,8 @@ B_\phi(2\pi r)=\mu_0 J_d\pi r^2
 得到：
 
 ```math
-\boxed{
-B_\phi(r,t)
-=\frac{\mu_0q_0\omega r}{2\pi a^2}\cos(\omega t),
-\quad r<a
-}
+B_\phi(r,t)=\frac{\mu_0 q_0\omega r}{2\pi a^2}\cos(\omega t)
+\qquad (0<r<a)
 ```
 
 方向沿环向，由右手定则判断。
