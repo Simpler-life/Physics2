@@ -14,6 +14,9 @@
 - [ ] [Chap14 Exercise 3(b) — 坡印廷定理与柱坐标散度](../Unresolved_Problems/Chap14_Exercise03_Poynting_Theorem_Divergence.md)
   - 当前状态：作业答案已抄，尚未独立理解；卡点是柱坐标散度公式及负散度的能量意义。
 
+- [ ] [Chap14 Exercise 4 — 球壳的感应力矩与角动量](../Unresolved_Problems/Chap14_Exercise04_Induced_Torque_Spherical_Shells.md)
+  - 当前状态：整道题尚未理解；需要从感应电场、球面力矩积分和角动量定理重新学起。
+
 ## 维护规则
 
 - 新题：**先创建** `Unresolved_Problems/ChapXX_ExerciseYY_*.md`，再把链接加入这里。
