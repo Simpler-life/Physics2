@@ -6,6 +6,9 @@
 
 ## 一、题目要求
 
+<img width="998" height="206" alt="image" src="https://github.com/user-attachments/assets/41ecbce6-0c28-4357-9b2b-1141878d0db5" />
+
+
 1. 以 $r=R$ 为界，求球内外电场 $\vec E(r)$。
 2. 求电场能量密度 $w_E(r)$。
 3. 通过对能量密度进行空间积分求最终静电能 $E_P$。
