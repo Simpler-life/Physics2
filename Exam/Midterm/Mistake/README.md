@@ -12,3 +12,4 @@
 - [M01：2023 期中第 1 题——导体球、电势符号与镜像法](M01_2023_Conducting_Sphere_Image_Charge.md)（(d) 独立正确；(a)–(c) 待独立复做）
 - [M02：2023 期中第 2 题——漏电球形电容器](M02_2023_Leaky_Spherical_Capacitor.md)（建模与分离变量正确；球面积、介电常数、初值、功率待复做）
 - [M03：2023 期中第 3 题——旋转带电球与角分布](M03_2023_Rotating_Charged_Sphere.md)（(a) 角分布正确；(b) 面积及 (b)(c) 积分上下限待复做）
+- [M04：2023 期中第 4 题——法拉第圆盘与转动动力学](M04_2023_Faraday_Disk_Rotational_Dynamics.md)（电磁建模正确；积分、力矩与微分方程收尾待独立复做）
