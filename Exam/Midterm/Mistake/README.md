@@ -15,3 +15,4 @@
 - [M04：2023 期中第 4 题——法拉第圆盘与转动动力学](M04_2023_Faraday_Disk_Rotational_Dynamics.md)（电磁建模正确；积分、力矩与微分方程收尾待独立复做）
 - [M05：2025–2026 秋期中第 3 题——接地平面与孤立带电球的多次电像](M05_2025_Grounded_Plane_Isolated_Charged_Sphere.md)（镜像结构与位置正确；电荷大小比例倒置，边界及总电荷条件待独立复做）
 - [M06：2025–2026 秋期中第 4 题——交变电流环、涡电流、磁偶极矩与受力](M06_2025_Eddy_Current_Disk_Magnetic_Dipole_Force.md)（轴线磁场误用圆心公式；环形电流截面已订正；磁力矩与净力需复做）
+- [M07：2024–2025 期中第 2 题——带电泡泡的电场能量与球壳体积微元](M07_2024_Charged_Bubble_Field_Energy_Volume_Element.md)（重点：第 3 问漏乘 $dV=4\pi r^2dr$，积分原函数出错，待独立复做）
