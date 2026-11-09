@@ -240,3 +240,131 @@ J=\frac12Ma^2
 - 解释两个负号：电场平衡的方向、磁制动的方向。
 
 **完成状态说明：** 已经独立建立主要电磁模型和角冲量积分；推导中使用过讲解，故尚不能标记为“独立完全正确”。相关数学补充可见 [一阶微分方程与分离变量法](../../../Math_for_Physics/02_First_Order_Linear_ODE_RC.md)。
+
+## 七、2024–2025 期中第 3 题复测：同一个微分方程错误再次出现（2026-11-09）
+
+> **复测状态：前两问独立做对；第三问电磁推导和角冲量方程正确，但分离变量积分仍出错。数学卡点尚未通过独立复做验证。**
+>
+> 来源：用户《24期中.pdf》第 3 题及其两页手写计算。本题与 2023 年第 4 题为同型法拉第圆盘问题；因此直接补记在 M04，不另建重复的错题正文。
+
+### 1. 本次正确到哪一步？
+
+用户这次能独立写出：
+
+```math
+\mathcal E=\frac12B\omega a^2,\qquad
+I=\frac{B\omega a^2}{2R},\qquad
+\tau_{\rm brake,mag}=\frac{B^2a^4}{4R}\omega
+```
+
+并进一步使用角动量关系：
+
+```math
+J\omega_0-J\omega(t)
+=\frac{B^2a^4}{4R}\int_0^t\omega(t')\,dt'
+```
+
+两边对时间求导得到：
+
+```math
+\frac{d[J\omega_0-J\omega(t)]}{dt}
+=\frac{B^2a^4}{4R}\omega(t)
+```
+
+**到这一步均正确。** 这表明电磁感应、分布力矩及转动动力学建模已经明显进步。
+
+### 2. 本次新增的核心错误：把 \omega 与 \omega_0-\omega 混同
+
+用户接下来写成类似：
+
+```math
+\frac{d[\omega_0-\omega(t)]}{\omega(t)}
+=\frac{B^2a^4}{4RJ}\,dt
+```
+
+这一式**作为微分形式仍是正确的**，因为分子 $d[\omega_0-\omega(t)]=-d\omega$。错误出在下一步：把左边当作
+
+```math
+\frac{d[\omega_0-\omega(t)]}{\omega_0-\omega(t)}
+```
+
+来求对数，于是得到错误的 $\ln|\omega_0-\omega(t)|$。
+
+**根本原因：** 分离变量时，分子中的微分属于 $\omega_0-\omega$，分母却是 $\omega$；两者不是同一个变量，不能套用 $\int du/u=\ln|u|$。
+
+正确处理有两种：
+
+- 直接用 $d(\omega_0-\omega)=-d\omega$，回到 $-d\omega/\omega$；
+- 或者先把微分方程整理为 $d\omega/dt=-k\omega$ 再分离变量，更不容易混乱。
+
+### 3. 最推荐的完整计算模板（定积分，避免常数错误）
+
+定义：
+
+```math
+k=\frac{B^2a^4}{4RJ}>0
+```
+
+由上面的正确积分方程两边求导：
+
+```math
+-J\frac{d\omega}{dt}
+=\frac{B^2a^4}{4R}\omega
+\quad\Longrightarrow\quad
+\frac{d\omega}{dt}=-k\omega
+```
+
+分离变量并立刻代入积分上下限：
+
+```math
+\int_{\omega_0}^{\omega(t)}
+\frac{d\omega'}{\omega'}
+=-k\int_0^t dt'
+```
+
+```math
+\ln\!\frac{\omega(t)}{\omega_0}=-kt
+```
+
+```math
+\boxed{\omega(t)=\omega_0
+\exp\!\left(-\frac{B^2a^4}{4RJ}t\right)}
+```
+
+以上假定初始角速度为正并一直以相同旋向减速；一般带符号角速度也满足这个线性方程。
+
+### 4. 为什么错误答案可以被初值直接否定？
+
+本次手写最后出现类似：
+
+```math
+\omega_0-\omega(t)=A e^{-kt}
+```
+
+代入 $t=0$，左边是 $0$，右边是 $A$，所以必须有 $A=0$。这样会推得所有时刻 $\omega(t)=\omega_0$，完全没有减速，与有磁制动力矩的物理情形矛盾。
+
+**做题时立即检查：**
+
+- $t=0$：$\omega(0)=\omega_0$；
+- $t\to\infty$：$\omega(t)\to0$；
+- $t>0$：角速度应单调减小（$k>0$）。
+
+这三个条件能迅速识别“衰减的对象写错”的解。
+
+### 5. 关联的同类方程
+
+```math
+\frac{dy}{dt}=-ky,\quad y(0)=y_0
+\quad\Longrightarrow\quad
+\boxed{y(t)=y_0e^{-kt}}
+```
+
+同一数学模板适用于 RC 放电、RL 自由衰减和磁阻尼圆盘。相关工具笔记见 [一阶微分方程与分离变量法](../../../Math_for_Physics/02_First_Order_Linear_ODE_RC.md)。
+
+**下一次只复测这一处，不必重做全部电磁计算：**
+
+```math
+\frac{dx}{dt}=-3x,\qquad x(0)=5
+```
+
+目标：闭卷推导 $x(t)$ 并用初值验证，不能仅看完答案就标记为已纠正。
