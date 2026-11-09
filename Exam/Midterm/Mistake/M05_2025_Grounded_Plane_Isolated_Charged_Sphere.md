@@ -8,6 +8,9 @@
 
 ## 1. 原题模型和任务
 
+<img width="1270" height="1254" alt="85ac182f495fbb069d17889e1b57d53f" src="https://github.com/user-attachments/assets/fd269c1f-a6d7-4c09-a1a8-514f8d9cba28" />
+
+
 无限大**接地导体平面**取 $z=0$。其上方有半径 $R$、净电荷 $Q$ 的**孤立带电导体球**，球心在 $z=d$，$R<d$。
 
 拟解析稿记录的要求：
