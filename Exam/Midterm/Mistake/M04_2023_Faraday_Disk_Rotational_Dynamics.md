@@ -8,6 +8,9 @@
 
 ## 一、模型和符号
 
+<img width="874" height="828" alt="fd0bda2c839ea20015a59aaceabebf07" src="https://github.com/user-attachments/assets/af9a59bb-5f01-450f-bc7f-a579797a18d2" />
+
+
 半径为 $a$ 的导体圆盘绕轴以角速度 $\omega$ 旋转，处在垂直盘面、大小为 $B$ 的均匀磁场中。通过中心与边缘的滑动触点接外电阻 $R$（以下理想化忽略盘内电阻及其他损耗）。
 
 - $r$：盘上某点到转轴的径向距离，$0\le r\le a$。
@@ -15,6 +18,11 @@
 - $J$：圆盘对转轴的转动惯量。
 - $\omega_0$：初始角速度。
 - 本文主要给出大小；方向要另用 $\vec v\times\vec B$ 和楞次定律判断。
+
+<img width="960" height="1308" alt="image" src="https://github.com/user-attachments/assets/71c66e11-8cc8-4f95-8d04-c616a7d3add4" />
+<img width="964" height="1484" alt="image" src="https://github.com/user-attachments/assets/8f42a848-6a24-4c30-92d7-5b5ea5f03b02" />
+<img width="928" height="578" alt="image" src="https://github.com/user-attachments/assets/64c2a082-eb52-4a6f-984d-8eb076e27c53" />
+
 
 ## 二、(a) 开路：电荷分离、电场及电势差
 
