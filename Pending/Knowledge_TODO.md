@@ -79,4 +79,6 @@ Lecture 4 主线已完成到作业可用水平。
 - [ ] **P8-4：为什么近轴光线可以使用小角近似，近似的适用范围是什么？** （2026-11-21 暂缓，先完成作业）
   - 已能跟随 Snell 定律与球面折射成像公式的代数推导，但尚未真正理解题目中 “rays making only small angles with the central axis” 如何保证相关角度足够小。
   - 待补：区分光线与主光轴的角 $\alpha,\beta,\gamma$ 和相对于法线的折射角 $\theta_1,\theta_2$；说明 $\sin\theta\approx\tan\theta\approx\theta$（弧度制）的条件与误差；解释球面矢高为何可忽略，以及 $\alpha\approx h/p$、$\beta\approx h/r$、$\gamma\approx h/i$ 的几何来源。
+  - <img width="1314" height="674" alt="image" src="https://github.com/user-attachments/assets/ea943aeb-1123-473a-9f1b-1c2fd7c09cf8" />
+
   - 关联作业：Homework #8，P8-4（球面折射公式）；状态：**答案推导已跟过，理论疑点未解决**。
