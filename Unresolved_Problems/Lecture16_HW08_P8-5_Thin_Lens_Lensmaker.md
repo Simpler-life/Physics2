@@ -7,6 +7,7 @@
 - 关联知识：[P8-4 近轴小角近似待补](../Pending/Knowledge_TODO.md)
 
 ## 原题目标
+<img width="1284" height="464" alt="image" src="https://github.com/user-attachments/assets/9067f34b-a397-40cf-8a5c-6aaaaa107e56" />
 
 A thin lens with index of refraction $n$ is surrounded by medium with refractive index $n_{\mathrm{medium}}$. Show that
 
