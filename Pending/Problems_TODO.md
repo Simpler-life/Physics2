@@ -17,6 +17,9 @@
 - [ ] [Chap14 Exercise 4 — 球壳的感应力矩与角动量](../Unresolved_Problems/Chap14_Exercise04_Induced_Torque_Spherical_Shells.md)
   - 当前状态：整道题尚未理解；需要从感应电场、球面力矩积分和角动量定理重新学起。
 
+- [ ] [Lecture 16 · Homework #8 P8-5 — Thin Lens / Lensmaker's Equation](../Unresolved_Problems/Lecture16_HW08_P8-5_Thin_Lens_Lensmaker.md)
+  - 当前状态：**答案直接抄写，尚未理解**；待补第二次折射的虚物与负物距、曲率半径符号及两面折射推导。
+
 ## 维护规则
 
 - 新题：**先创建** `Unresolved_Problems/ChapXX_ExerciseYY_*.md`，再把链接加入这里。
